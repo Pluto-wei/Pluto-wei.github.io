@@ -746,7 +746,7 @@ MPEG-4</p>
             <i class="icon icon-lg icon-copyright"></i>
             2019
             <i class="icon icon-lg icon-heart"></i>
-            <a href="http://Pluto-wei.github.io">pluto-wei.com</a>
+            <a href="http://Pluto-wei.github.io">Pluto-wei.com</a>
             <br/>
             Power by
             <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>&nbsp;·&nbsp;
@@ -978,6 +978,27 @@ if (window.console && window.console.log) {
 
 
 <!-- 公式渲染 -->
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 
 
