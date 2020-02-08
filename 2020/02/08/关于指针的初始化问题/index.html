@@ -6,13 +6,13 @@
     
     
     
-    <title>Crash Course Computer Science（part 3） | Pluto-wei | Hello,nice to meet you!</title>
+    <title>关于指针的初始化问题 | Pluto-wei | Hello,nice to meet you!</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#EE82EE">
     
     
-    <meta name="keywords" content="计算机科学">
+    <meta name="keywords" content="C语言">
     
     
 
@@ -39,18 +39,16 @@
 
 
     
-    <meta name="description" content="本部分内容：计算机的现状和未来 完结撒花！！！！">
-<meta name="keywords" content="计算机科学">
+    <meta name="description" content="不要给任何没有初始化的指针赋值！ 不要给任何没有初始化的指针赋值！ 不要给任何没有初始化的指针赋值！ 重要的事情说亿遍！！！！">
+<meta name="keywords" content="C语言">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Crash Course Computer Science（part 3）">
-<meta property="og:url" content="http:&#x2F;&#x2F;pluto-wei.github.io&#x2F;2020&#x2F;02&#x2F;02&#x2F;Crash%20Course%20Computer%20science%203&#x2F;index.html">
+<meta property="og:title" content="关于指针的初始化问题">
+<meta property="og:url" content="http:&#x2F;&#x2F;pluto-wei.github.io&#x2F;2020&#x2F;02&#x2F;08&#x2F;%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98&#x2F;index.html">
 <meta property="og:site_name" content="Pluto-wei">
-<meta property="og:description" content="本部分内容：计算机的现状和未来 完结撒花！！！！">
+<meta property="og:description" content="不要给任何没有初始化的指针赋值！ 不要给任何没有初始化的指针赋值！ 不要给任何没有初始化的指针赋值！ 重要的事情说亿遍！！！！">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;20644861-5b63cc139a5449fe.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240">
-<meta property="og:updated_time" content="2020-02-06T13:28:06.090Z">
+<meta property="og:updated_time" content="2020-02-08T07:48:21.234Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;20644861-5b63cc139a5449fe.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240">
     
         <link rel="alternate" type="application/atom+xml" title="Pluto-wei" href="../../../../atom.xml">
     
@@ -152,7 +150,7 @@
         <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Crash Course Computer Science（part 3）</div>
+        <div class="flex-col header-title ellipsis">关于指针的初始化问题</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -189,22 +187,15 @@
 
 <div class="container body-wrap">
     
-    <aside class="post-widget">
-        <nav class="post-toc-wrap" id="post-toc">
-            <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#计算机的现状和未来"><span class="post-toc-number">1.</span> <span class="post-toc-text"> 计算机的现状和未来</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#机器学习ml人工智能ai"><span class="post-toc-number">1.1.</span> <span class="post-toc-text"> 机器学习ML＆人工智能AI</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#计算机视觉"><span class="post-toc-number">1.2.</span> <span class="post-toc-text"> 计算机视觉</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#自然语言处理"><span class="post-toc-number">1.3.</span> <span class="post-toc-text"> 自然语言处理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#机器人"><span class="post-toc-number">1.4.</span> <span class="post-toc-text"> 机器人</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#计算机心理学"><span class="post-toc-number">1.5.</span> <span class="post-toc-text"> 计算机心理学</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#教育科技"><span class="post-toc-number">1.6.</span> <span class="post-toc-text"> 教育科技</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#奇点天网未来"><span class="post-toc-number">1.7.</span> <span class="post-toc-text"> 奇点，天网，未来</span></a></li></ol></li></ol>
-        </nav>
-    </aside>
-   
-<article id="post-Crash Course Computer science 3"
+<article id="post-关于指针的初始化问题"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Crash Course Computer Science（part 3）</h1>
+        <h1 class="post-card-title">关于指针的初始化问题</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2020-02-02 13:19:55" datetime="2020-02-02T05:19:55.000Z"  itemprop="datePublished">2020-02-02</time>
+            <time class="post-time" title="2020-02-08 14:07:36" datetime="2020-02-08T06:07:36.000Z"  itemprop="datePublished">2020-02-08</time>
 
             <br id="mybreak"/>
             
@@ -223,96 +214,27 @@
         </div>
         <div class="post-count-custom">
             <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">3</span>&nbsp;分钟
+            阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>本部分内容：<strong>计算机的现状和未来</strong><br>
-完结撒花！！！！<br>
-<em><a id="more"></a></em><br>
-今天是2020/02/06<br>
-Crash Course Computer science 计算机科学速成课 终于看完啦！！<br>
-根据浏览器判断是2020/01/23开始的😏<br>
-除去没看的几天，一共看了13天😬还不错啦！<br>
-强推！真的很棒！感谢款待！！<br>
-小姐姐在此！超可爱哦！！</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="https://upload-images.jianshu.io/upload_images/20644861-5b63cc139a5449fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="xjj" title="">
-                </div>
-                <div class="image-caption">xjj</div>
-            </figure>
-<h1 id="计算机的现状和未来"><a class="markdownIt-Anchor" href="#计算机的现状和未来"></a> 计算机的现状和未来</h1>
-<h2 id="机器学习ml人工智能ai"><a class="markdownIt-Anchor" href="#机器学习ml人工智能ai"></a> 机器学习ML＆人工智能AI</h2>
+            <p>不要给任何没有初始化的指针赋值！<br>
+不要给任何没有初始化的指针赋值！<br>
+不要给任何没有初始化的指针赋值！<br>
+重要的事情说亿遍！！！！</p>
+<a id="more"></a>
+<p>老是忘掉！！！</p>
+<p>💡应该在给 *p赋值前要给 *p分配一个空间</p>
+<p>💡scanf读入字符串一定要事先为它申请足够的空间</p>
 <ul>
-<li>机器学习算法可以让计算机从数据中学习，然后自行做出预测和决定</li>
-<li>机器学习是为了实现人工智能这个更宏大的目标的技术之一</li>
-<li><strong>分类</strong>：用算法减小复杂性，把数据简化成特征，特征帮助分类</li>
-<li>机器学习算法的目的是最大化正确分类&amp;最小化错误分类，找到最好的决策边界</li>
-<li>源于统计学的技术：<strong>决策树，森林，支持向量机</strong></li>
-<li><strong>人工神经网络</strong>，来源于大脑里的神经元。输入层，隐藏层，输出层。</li>
-<li>算法调整偏差和权重来训练神经网络，用标记数据训练和测试，提高准确性。有激活函数，线性传递函数</li>
-<li>加权，求和，偏置，激活函数应用于一层里的每一个神经元，并向前传播</li>
-<li>弱人工智能：只能做特定任务，分类，找人脸，翻译，自动驾驶</li>
-<li>强人工智能：真正通用，像人一样聪明</li>
-<li>强化学习：学习什么管用，什么不管用</li>
+<li>字符串</li>
 </ul>
-<h2 id="计算机视觉"><a class="markdownIt-Anchor" href="#计算机视觉"></a> 计算机视觉</h2>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">char</span> *str = (<span class="keyword">char</span>*)<span class="built_in">malloc</span>(<span class="number">20</span>*<span class="keyword">sizeof</span>(<span class="keyword">char</span>));</span><br></pre></td></tr></tbody></table></figure>
 <ul>
-<li>颜色跟踪算法，一块块像素处理</li>
-<li>核/过滤器，把核引用于像素块叫做卷积</li>
-<li>核能做很多图像转换，例如锐化图像，模糊图像；可以匹配特定形状，例如边缘检测；可以描述简单的形状，例如找线段圆圈（眼睛鼻子）</li>
-<li>多个核组合在一起，找到特征组合</li>
-<li>卷积神经网络，用一堆神经元处理图像数据，每个都会输出一个新图像，本质上是被不同的核处理了，逐层深入，卷积，由小的特征组合成大的特征，直到一层把所有的特征集合到一起</li>
-<li>生物识别 标志点 情感识别算法</li>
+<li>结构体指针</li>
 </ul>
-<h2 id="自然语言处理"><a class="markdownIt-Anchor" href="#自然语言处理"></a> 自然语言处理</h2>
-<ul>
-<li>Natural Language Processing</li>
-<li>把句子切成一块块，词性，短语结构规则，把语言结构化</li>
-<li>用规则做出分析树</li>
-<li>聊天机器人的最基本部件：处理，分析，生成文字。应用于客服</li>
-<li>指定简单协议用于沟通–&gt;机器学习，从语言数据库中学习，深度学习网络</li>
-<li>语音识别，波形转化成频率（快速傅里叶变换）</li>
-<li>构成声音的不同片段：音素</li>
-<li>语音合成</li>
-</ul>
-<h2 id="机器人"><a class="markdownIt-Anchor" href="#机器人"></a> 机器人</h2>
-<ul>
-<li>自动运行的机器，大规模生产，高效不知疲惫</li>
-<li>可编程工业机器人，简单控制回路，负反馈回路</li>
-<li>PID–有控制回路和反馈机制 “比例-积分-微分控制器”</li>
-<li>机器人三定律</li>
-</ul>
-<h2 id="计算机心理学"><a class="markdownIt-Anchor" href="#计算机心理学"></a> 计算机心理学</h2>
-<ul>
-<li>社会心理学，认知心理学，行为心理学，感知心理学</li>
-<li>易用读：人造物体达到目的的效率有多高</li>
-<li>UI设计：视觉，认知系统 ，直观性</li>
-<li>视频可以增强凝视</li>
-<li>人机交互HRI</li>
-<li>几乎像人类和真的人类之间的小曲线–恐怖谷</li>
-</ul>
-<h2 id="教育科技"><a class="markdownIt-Anchor" href="#教育科技"></a> 教育科技</h2>
-<ul>
-<li>智能辅导系统</li>
-<li>判断规则+选择算法–域模型</li>
-<li>贝叶斯知识追踪</li>
-<li>自适应式程序</li>
-<li>教育数据挖掘</li>
-<li>虚拟现实和增强现实</li>
-</ul>
-<h2 id="奇点天网未来"><a class="markdownIt-Anchor" href="#奇点天网未来"></a> 奇点，天网，未来</h2>
-<ul>
-<li>奇点：智能科技的失控性发展</li>
-<li>复杂度刹车：S性曲线，而非J型</li>
-<li>手工型工作，思维型工作；重复性工作，非重复性工作</li>
-<li>加密货币，无线通讯，3D打印，生物信息学，量子计算…</li>
-</ul>
-<p>推荐：<br>
-哲学速成课，人工智能速成课，<br>
-西部世界<br>
-钻石时代</p>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">studentInfo</span>{</span></span><br><span class="line">        <span class="keyword">int</span> id;</span><br><span class="line">        <span class="keyword">char</span> name[<span class="number">20</span>];</span><br><span class="line">        <span class="keyword">char</span> gender;</span><br><span class="line">        studentInfo* next;</span><br><span class="line">    }*p;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %c"</span>, &amp;p-&gt;id, &amp;p-&gt;gender);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d %c"</span>, p-&gt;id, p-&gt;gender);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}<span class="comment">//这样是无法输出的，因为对结构体指针没有进行初始化操作</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">studentInfo</span>{</span></span><br><span class="line">        <span class="keyword">int</span> id;</span><br><span class="line">        <span class="keyword">char</span> name[<span class="number">20</span>];</span><br><span class="line">        <span class="keyword">char</span> gender;</span><br><span class="line">        studentInfo* next;</span><br><span class="line">    }stu, *p;</span><br><span class="line">    p = &amp;stu;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %c"</span>, &amp;p-&gt;id, &amp;p-&gt;gender);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d %c"</span>, p-&gt;id, p-&gt;gender);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}<span class="comment">//这样才可以！</span></span><br></pre></td></tr></tbody></table></figure>
+<p>💡 其实不过就是你在给指针指向的地方赋值的时候，总得知道他指向哪里吧</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -338,12 +260,12 @@ Crash Course Computer science 计算机科学速成课 终于看完啦！！<br>
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2020-02-06T13:28:06.090Z" itemprop="dateUpdated">2020-02-06 21:28:06</time>
+    最后更新：<time datetime="2020-02-08T07:48:21.234Z" itemprop="dateUpdated">2020-02-08 15:48:21</time>
 </span>
 
 
         
-        原文链接：<a href="" target="_blank" rel="external">http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/</a>
+        原文链接：<a href="" target="_blank" rel="external">http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/</a>
         
     </div>
     <footer>
@@ -365,7 +287,7 @@ Crash Course Computer science 计算机科学速成课 终于看完啦！！<br>
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" rel="tag">计算机科学</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li></ul>
 
 
             
@@ -375,7 +297,7 @@ Crash Course Computer science 计算机科学速成课 终于看完啦！！<br>
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/&title=《Crash Course Computer Science（part 3）》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/&title=《关于指针的初始化问题》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -385,24 +307,25 @@ Crash Course Computer science 计算机科学速成课 终于看完啦！！<br>
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/&title=《Crash Course Computer Science（part 3）》 — Pluto-wei&source=本部分内容：计算机的现状和未来
-完结撒花！！！！
-" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/&title=《关于指针的初始化问题》 — Pluto-wei&source=不要给任何没有初始化的指针赋值！
+不要给任何没有初始化的指针赋值！
+不要给任何没有初始化的指针赋值！
+重要的事情说亿遍！！！！" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Crash Course Computer Science（part 3）》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/&via=http://Pluto-wei.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《关于指针的初始化问题》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/&via=http://Pluto-wei.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -422,21 +345,13 @@ Crash Course Computer science 计算机科学速成课 终于看完啦！！<br>
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="../../05/C%E8%AF%AD%E8%A8%80-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%EF%BC%81%EF%BC%81/" id="post-prev" class="post-nav-link">
-        <h4 class="title" >
-          上一篇：C语言 快速入门！！
-        </h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="../Crash%20Course%20Computer%20science%202/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：Crash Course Computer Science（part 2）">下一篇：Crash Course Computer Science（part 2）</h4>
+      <a href="../../06/Crash%20Course%20Computer%20science%203/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：Crash Course Computer Science（part 3）">下一篇：Crash Course Computer Science（part 3）</h4>
       </a>
     </div>
   
@@ -535,7 +450,7 @@ Crash Course Computer science 计算机科学速成课 终于看完啦！！<br>
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/&title=《Crash Course Computer Science（part 3）》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/&title=《关于指针的初始化问题》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -545,24 +460,25 @@ Crash Course Computer science 计算机科学速成课 终于看完啦！！<br>
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/&title=《Crash Course Computer Science（part 3）》 — Pluto-wei&source=本部分内容：计算机的现状和未来
-完结撒花！！！！
-" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/&title=《关于指针的初始化问题》 — Pluto-wei&source=不要给任何没有初始化的指针赋值！
+不要给任何没有初始化的指针赋值！
+不要给任何没有初始化的指针赋值！
+重要的事情说亿遍！！！！" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Crash Course Computer Science（part 3）》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/&via=http://Pluto-wei.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《关于指针的初始化问题》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/&via=http://Pluto-wei.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/02/Crash%20Course%20Computer%20science%203/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/08/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%97%AE%E9%A2%98/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -573,7 +489,7 @@ Crash Course Computer science 计算机科学速成课 终于看完啦！！<br>
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACq0lEQVR42u3ay27DQAgF0Pz/T6dSV60qJxcYGi+OV1Ye9pxZDAh4POLr+X39vU++/fn51S+f8fXYuPDw8PBaS3/9uKulJODqe5ONK2wBHh4e3hpvEgxOLTrZiHzNeHh4eHfg5Ut5vSkbT8bDw8O7J+/1QqOXFQNJco+Hh4f3KV7ymqSompQtkk3prQcPDw/vf3iTBtin7v+pv4eHh4dXPIJ7LbE8+a5+Ul4nHh4e3gKvWkitBow8dZ7/q9A9w8PDwxvw8oO4etDvbVYhnODh4eEt8HoHdBWWJOX5W8qjYHh4eHhHeclS8nb+pKzQY7xJwfHw8PDWeHnrvTpSUE3Kq4GkUMDFw8PDO8qrFgKSsaq8WFwtWxRKIXh4eHgf4lUP9F5ht/dtoRiBh4eHd4iXHO6niq0bxYhmJMHDw8Mb8/KENS80zNPr3nOa82V4eHh4RV5+BFcHsM4OH7wulFy+Fw8PD2+B1ysKzEsPZ4NQIe7h4eHhDXj5KEC+oHwRk62M0nQ8PDy8NV6+0N4wwbxwnMe3X0/Gw8PDW+ZNRk57Jd1TpeHLJ+Dh4eGt8arN++roahJsJqn5m9YXHh4e3hovP5R7Q1TVdDzfmjftLjw8PLyjvHx0aTJA0Eup5wURPDw8vG1enuZO0uhTpYfCpuDh4eGtnbe9Rn7+r+SZ1SfnZQ48PDy8s7xCS6nV2u+VM6rg8ugVHh4e3pjXS5R7hYw84X4ULzw8PLxt3rN49V6WJ9NnRxbw8PDwNninFtpLgvMW16QJh4eHh7fBmyTK+W96o1oHAgMeHh7eGi9veuUF3Jydt83KYQYPDw/vZrwkyU6aapOQg4eHh3dnXl5umDfMqqn25Xrw8PDw1njVwkHygjwwHG5o4eHh4S3zqg2wXltrklL3Qg4eHh7eAu8LvNU1ygH67DIAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAAEjklEQVR42u3aS47bQAwFwLn/pR0g28Tye6QNuDWlVaBxpO7Sgs3Pz098Pf5e1/cf/1z//vLZdf2b6zc+e8v1nZ9PXJgwYcKE6SuZ9htI7rTo7SeZvT3ZOyZMmDBhugdT/rgkGLdbSha92Xx+pHh6HxMmTJgw/QKm63B7/ZwWa597zj42JkyYMGHClG8j2eSsxJx/tvzzYMKECROmezPNAvZmEZtWaJv0tmk5JkyYMGG6E1Mbku/07w/ON2HChAkTpi9gepTXpvg7C+SbY0d++Hixa0yYMGHCdCxTkha2UTIf5WljcfvL2fmoqBBgwoQJE6avZ8rHXDbl15a7bWq2B478mZgwYcKE6R5Ms3GZtqia3MmLy7MmZZ54/6dCgAkTJkyYDmeajbDkReF2ICZfz/5jv0iAMWHChAnT4UxJirgvB88Cf36Y+CAfJkyYMGE6likv9c6I88Q1/0izlmf+gZ/+FRMmTJgwHcjUNvk2gzJ5CJ+lu0n6PUyzMWHChAnTsUztsE4esPNUthigGR1W2l08XRUmTJgwYTqQKW8uJqDvLdrOtpRzF0cWTJgwYcJ0LFO74Tb5nIX8WScxLygPm6+YMGHChOlApjaVbRPRdxHnpdh9yv009cWECRMmTMcytWF4VpBtFzfDGkJsKgSYMGHChOmLmfJAPhvKSUJ1/tfZk9uPhAkTJkyY7se0L93mwXtTeG3T7P0wECZMmDBh+g1MOeUebpYkJ4eG5CqOQZgwYcKE6VimZEtJItqWd2dPmwX1tnWKCRMmTJjOZZoVXpNEtF1i8q72y+cDST+zL4AJEyZMmL6eaXYgyFPQWcK8eVpbMt48BxMmTJgwfT/TLMmcBeNNEbZtN87C/NNdYMKECROmY5nyom2eAG9OJXkCnKev70raMWHChAnTiUx5wpnz5QuaDadGwbss5r7AwoQJEyZMhzO1jcZ8oKct5rap6aw1W5e2MWHChAnT4Uyb8u7sEJB/gDxVbkvVxQEIEyZMmDAdy5Skl20JeBZ6N+Xa6/fmY0CYMGHChOmuTJtDwCfKrNcb3jRf9+iYMGHChOksptmATj7yMnvOLHnOV1WvHxMmTJgwHcvUNvza80UbqtuQPzvQvGGeFxMmTJgwHctUN/niRWy22g7Izo4p0U4xYcKECdNRTK3lKpQG9O1f9y3PqPKNCRMmTJhuwZSnuO9KStuWZFK0bRuukQkmTJgwYTqc6XrR+/jYppr5hNGmtVkk+ZgwYcKE6RZMSahuR3M+V95tV9geOzBhwoQJ0z2YZkDJK/NgvGHK09r2eDHM2jFhwoQJ05cxPcpr35Jsw3Y+uLNpc754JiZMmDBhOpapTUHbYm7LlLczZ2M67bswYcKECdM9mGZtyNkhYJNyt03NtoSNCRMmTJjuzdS+Pk9Q82W1pd5PFHmffjBMmDBhwvQLmBK4WVDfhOq2yJt3KotHYMKECROmGzHlfNd32vv5sWOWbL/4v5gwYcKE6XCmzfBN26qcNSzbBmTyy+IQgwkTJkyYjmXaDO7sjxHJ09q0+V1F6vrChAkTJkzfxfQHpWpNbs30MzwAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
