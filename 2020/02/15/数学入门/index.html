@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta charset="utf-8">
+    
+    
+    
+    <title>数学入门 | Pluto-wei | Hello,nice to meet you!</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    
+    <meta name="theme-color" content="#EE82EE">
+    
+    
+    <meta name="keywords" content="C语言">
+    
+    
+
+    
+
+    <!-- Baidu Push -->
+<script>
+	(function(){
+		var bp = document.createElement('script');
+		var curProtocol = window.location.protocol.split(':')[0];
+		if (curProtocol === 'https') {
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		}
+		else {
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		}
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(bp, s);
+	})();
+
+	var _hmt = _hmt || [];
+</script>
+
+
+
+    
+    <meta name="description" content="唔，这里是算法笔记第五章-数学问题💓 大概是两天半吧，内容挺少的。后面还划水了一部分😜 至此入门的三章算是看完咯！">
+<meta name="keywords" content="C语言">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学入门">
+<meta property="og:url" content="http:&#x2F;&#x2F;pluto-wei.github.io&#x2F;2020&#x2F;02&#x2F;15&#x2F;%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8&#x2F;index.html">
+<meta property="og:site_name" content="Pluto-wei">
+<meta property="og:description" content="唔，这里是算法笔记第五章-数学问题💓 大概是两天半吧，内容挺少的。后面还划水了一部分😜 至此入门的三章算是看完咯！">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;20644861-5844382797ca18ab.jpg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240">
+<meta property="og:updated_time" content="2020-02-15T03:26:22.442Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;20644861-5844382797ca18ab.jpg?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240">
+    
+        <link rel="alternate" type="application/atom+xml" title="Pluto-wei" href="../../../../atom.xml">
+    
+    <link rel="shortcut icon" href="../../../../img/jqr.jpg">
+    <link id="style" rel="stylesheet" href="../../../../css/style.css?v=3.0">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+            
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+    <aside id="menu"  class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" >
+      <div class="brand">
+        <a href="../../../../index.html" class="avatar waves-effect waves-circle waves-light">
+          <img src="../../../../img/jqr.jpg" alt="avatar">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname" id="name">Pluto-wei</h5>
+          
+            <div id="yiyanmotto" class="motto">&nbsp;</div>
+          
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+              <li class="waves-block waves-effect">
+                  <a href="../../../../index.html"  >
+                    <i class="icon icon-lg icon-home"></i>
+                    <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="../../../../archives"  >
+                    <i class="icon icon-lg icon-archives"></i>
+                    <span>归 档</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="../../../../categories"  >
+                    <i class="icon icon-lg icon-th-list"></i>
+                    <span>分 类</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="../../../../tags"  >
+                    <i class="icon icon-lg icon-tags"></i>
+                    <span>标 签</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="../../../../about"  >
+                    <i class="icon icon-lg icon-smile-o"></i>
+                    <span>关 于</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+      <div class="nav2">
+          
+              <a class="nav2item" data-title="Email" href="../../../../" target="_parent"title="Email" >
+                <i class="icon icon-lg icon-envelope-o envelope-o"></i>
+              </a>
+          
+              <a class="nav2item" data-title="Github" href="https://github.com/Pluto-wei" target="_blank"title="Github" >
+                <i class="icon icon-lg icon-github github"></i>
+              </a>
+          
+              <a class="nav2item" data-title="微博" href="../../../../" target="_blank"title="微博" >
+                <i class="icon icon-lg icon-weibo weibo"></i>
+              </a>
+          
+
+            </div>
+        
+      </ul>
+        
+    </div>
+  </div>
+ 
+</aside>
+
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">数学入门</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        <a href="../../atom.xml" target="_blank" class="header-icon waves-effect waves-circle waves-light" id="Rss">
+            <i class="icon icon-lg icon-rss"></i>
+        </a>
+    </div>
+</header>
+<header class="content-header post-header">
+    
+    
+    <div class="container fade-scale">
+        <div id="myheader">
+            <h1 class="title">
+                
+            </h1>
+            <h5 class="subtitle">
+                
+                
+            </h5>
+        </div>
+    </div>
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#入门篇3数学问题"><span class="post-toc-number">1.</span> <span class="post-toc-text"> 入门篇3–数学问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#简单数学"><span class="post-toc-number">1.1.</span> <span class="post-toc-text"> 简单数学</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最大公约数与最小公倍数"><span class="post-toc-number">1.2.</span> <span class="post-toc-text"> 最大公约数与最小公倍数</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#分数的四则运算"><span class="post-toc-number">1.3.</span> <span class="post-toc-text"> 分数的四则运算</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#分数的表示和化简"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text"> 分数的表示和化简</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#分数的四则运算-2"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text"> 分数的四则运算</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#分数的输出"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text"> 分数的输出</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#素数"><span class="post-toc-number">1.4.</span> <span class="post-toc-text"> 素数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#素数的判断"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text"> 素数的判断</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#素数表"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text"> 素数表</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#质因子分解"><span class="post-toc-number">1.5.</span> <span class="post-toc-text"> 质因子分解</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#大整数运算"><span class="post-toc-number">1.6.</span> <span class="post-toc-text"> 大整数运算</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#大整数存储"><span class="post-toc-number">1.6.1.</span> <span class="post-toc-text"> 大整数存储</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#高精度四则运算"><span class="post-toc-number">1.6.2.</span> <span class="post-toc-text"> 高精度四则运算</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#拓展欧几里得算法"><span class="post-toc-number">1.7.</span> <span class="post-toc-text"> 拓展欧几里得算法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#组合数"><span class="post-toc-number">1.8.</span> <span class="post-toc-text"> 组合数</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-数学入门"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">数学入门</h1>
+        <div class="post-meta">
+            <i class="icon icon-lg icon-calendar-o"></i>
+            发表于
+            <time class="post-time" title="2020-02-15 11:12:29" datetime="2020-02-15T03:12:29.000Z"  itemprop="datePublished">2020-02-15</time>
+
+            <br id="mybreak"/>
+            
+	<i class="icon icon-lg icon-folder-o"></i>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="../../../../categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/">算法笔记</a></li></ul>
+
+
+            <i>·</i>
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>次浏览
+</span>
+
+
+        </div>
+        <div class="post-count-custom">
+            <i class="icon icon-lg icon-comment-o"></i>
+            阅读本文可能花费您&nbsp;<span class="post-count">6</span>&nbsp;分钟
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>唔，这里是算法笔记第五章-数学问题💓<br>
+大概是两天半吧，内容挺少的。后面还划水了一部分😜<br>
+至此入门的三章算是看完咯！</p>
+<a id="more"></a>
+<p>迟到的情人节快乐哟🤗</p><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://upload-images.jianshu.io/upload_images/20644861-5844382797ca18ab.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure><p></p>
+<h1 id="入门篇3数学问题"><a class="markdownIt-Anchor" href="#入门篇3数学问题"></a> 入门篇3–数学问题</h1>
+<h2 id="简单数学"><a class="markdownIt-Anchor" href="#简单数学"></a> 简单数学</h2>
+<ul>
+<li>只要掌握简单的数理逻辑</li>
+</ul>
+<h2 id="最大公约数与最小公倍数"><a class="markdownIt-Anchor" href="#最大公约数与最小公倍数"></a> 最大公约数与最小公倍数</h2>
+<ul>
+<li>一般用gcd(a,b)表示a,b的最大公约数</li>
+<li>一般用欧几里得算法（辗转相除法）</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(b==<span class="number">0</span>) <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> gcd(b,a%b);</span><br><span class="line">    <span class="comment">//简洁：return !b?a:gcd(b,a%b);</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>一般用lcm(a,b)来表示最小公倍数</li>
+<li>最大公约数d，最小公约数a/d*b</li>
+</ul>
+<h2 id="分数的四则运算"><a class="markdownIt-Anchor" href="#分数的四则运算"></a> 分数的四则运算</h2>
+<h3 id="分数的表示和化简"><a class="markdownIt-Anchor" href="#分数的表示和化简"></a> 分数的表示和化简</h3>
+<ul>
+<li>假分数，只有分子和分母</li>
+<li>注意分母不能为0啦</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Fraction</span>{</span> <span class="comment">//分数</span></span><br><span class="line">    <span class="keyword">int</span> up,down; <span class="comment">//分子分母</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>down为非负数</li>
+<li>若分数为0，则up=0，down=1</li>
+<li>分子分母没有除了1以外的公约数</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//分数的化简</span></span><br><span class="line"><span class="function">Fraction <span class="title">reduction</span><span class="params">(Fraction result)</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(result.dowm&lt;<span class="number">0</span>){</span><br><span class="line">        result.up=-result.up;</span><br><span class="line">        result.down=-result.down;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(result.up==<span class="number">0</span>) {</span><br><span class="line">        result.down=<span class="number">1</span>;</span><br><span class="line">    }<span class="keyword">else</span> {</span><br><span class="line">        <span class="keyword">int</span> d=gcd(<span class="built_in">abs</span>(result.up),result.down);</span><br><span class="line">        result.up/=d;</span><br><span class="line">        result.down/=d;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="分数的四则运算-2"><a class="markdownIt-Anchor" href="#分数的四则运算-2"></a> 分数的四则运算</h3>
+<ul>
+<li>加减乘除</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Fraction <span class="title">add</span><span class="params">(Fraction f1,Fraction f2)</span></span>{</span><br><span class="line">	Fraction result;</span><br><span class="line">    result.up=f1.up*f2.down+f2.up*f1.down;<span class="comment">//分数和的分子</span></span><br><span class="line">    result.down=f1.down*f2,down;<span class="comment">//分数和的分母</span></span><br><span class="line">    <span class="keyword">return</span> reduction(result);<span class="comment">//化简    </span></span><br><span class="line">}</span><br><span class="line"><span class="function">Fraction <span class="title">minu</span><span class="params">(Fraction f1,Fraction f2)</span></span>;</span><br><span class="line"><span class="function">Fraction <span class="title">multi</span><span class="params">(Fraction f1,Fraction f2)</span></span>;</span><br><span class="line"><span class="function">Fraction <span class="title">divide</span><span class="params">(Fraction f1,Fraction f2)</span></span>;</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="分数的输出"><a class="markdownIt-Anchor" href="#分数的输出"></a> 分数的输出</h3>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">showResult</span><span class="params">(Fraction r)</span></span>{    <span class="comment">//输出分数r</span></span><br><span class="line">    r=reduction(r);</span><br><span class="line">    <span class="keyword">if</span>(r.down==<span class="number">1</span>) <span class="built_in">printf</span>(<span class="string">"%lld"</span>,r.up);  <span class="comment">//整数</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">abs</span>(r.up)&gt;r.down) {   <span class="comment">//假分数</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d %d/%d"</span>,\</span><br><span class="line">               r.up/r.down,<span class="built_in">abs</span>(r.up)%r.down,r.down); </span><br><span class="line">    }<span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">"%d/%d"</span>,r.up,r.down);   <span class="comment">//真分数</span></span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>💡分数的乘法和除法过程中可能使分子或分母超过int，一般用long long</li>
+</ul>
+<h2 id="素数"><a class="markdownIt-Anchor" href="#素数"></a> 素数</h2>
+<h3 id="素数的判断"><a class="markdownIt-Anchor" href="#素数的判断"></a> 素数的判断</h3>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isPrime</span><span class="params">(<span class="keyword">int</span> n)</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(n&lt;=<span class="number">1</span>) <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">//特判</span></span><br><span class="line">    <span class="keyword">int</span> sqr=(<span class="keyword">int</span>)<span class="built_in">sqrt</span>(<span class="number">1.0</span>*n); <span class="comment">//根号n, math.h</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;sqr;i++){ <span class="comment">//用i*i&lt;n容易溢出</span></span><br><span class="line">        <span class="keyword">if</span>(n%i==<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    }<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="素数表"><a class="markdownIt-Anchor" href="#素数表"></a> 素数表</h3>
+<ul>
+<li>筛法，通过bool实现</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> prime[maxn];</span><br><span class="line"><span class="keyword">bool</span> isPrime[maxn]={<span class="number">0</span>};</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findPrime</span><span class="params">(<span class="keyword">int</span> n)</span></span>{</span><br><span class="line">    <span class="keyword">int</span> j=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i =<span class="number">2</span>;i&lt;maxn;i++){</span><br><span class="line">        <span class="keyword">if</span>(!isPrime[i]){</span><br><span class="line">            prime[j++]=i;  <span class="comment">//第j个素数是i</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> k=i+i;k&lt;maxn;k+=i){</span><br><span class="line">                isPrime[k]=<span class="number">1</span>; <span class="comment">//标识i的倍数</span></span><br><span class="line">            }</span><br><span class="line">        }<span class="keyword">if</span>(j==n) <span class="keyword">break</span>;</span><br><span class="line">    }<span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="质因子分解"><a class="markdownIt-Anchor" href="#质因子分解"></a> 质因子分解</h2>
+<ul>
+<li>定义结构体factor，用来存放质因子及其个数</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">factor</span>{</span></span><br><span class="line">    <span class="keyword">int</span> x,cnt; <span class="comment">//x为质因子，cnt为其个数    </span></span><br><span class="line">}fac[<span class="number">10</span>];</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>fac[ ]数组存放n的所有质因子，int范围只需要fac[10]就够了</li>
+</ul>
+<h2 id="大整数运算"><a class="markdownIt-Anchor" href="#大整数运算"></a> 大整数运算</h2>
+<h3 id="大整数存储"><a class="markdownIt-Anchor" href="#大整数存储"></a> 大整数存储</h3>
+<ul>
+<li>没有考虑负数</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">bign</span>{</span>  <span class="comment">//bignumber</span></span><br><span class="line">    <span class="keyword">int</span> d[<span class="number">1000</span>];</span><br><span class="line">    <span class="keyword">int</span> len;</span><br><span class="line">    bign(){</span><br><span class="line">        <span class="built_in">memset</span>(d,<span class="number">0</span>,<span class="keyword">sizeof</span>(d));  <span class="comment">//初始化</span></span><br><span class="line">        len = <span class="number">0</span>;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>输入字符串时，先用字符串读入，再把字符串另存为bign结构体</li>
+<li>char数组读入时，整数的高位存储在低位，所以倒着赋给d[ ]数组</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">bign <span class="title">change</span><span class="params">(<span class="keyword">char</span> str[])</span></span>{<span class="comment">//把整数转化为bign</span></span><br><span class="line">    bign a;</span><br><span class="line">    a.len = <span class="built_in">strlen</span>(str);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.len;i++){</span><br><span class="line">        a.d[i]=str[a.len-i<span class="number">-1</span>]-<span class="string">'0'</span>;<span class="comment">//逆着赋值</span></span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> a;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>比较大小</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">compare</span><span class="params">(bign a,bign b)</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(a.len&gt;b.len) <span class="keyword">return</span> <span class="number">1</span>; <span class="comment">//a大</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(a.len&lt;b.len) <span class="keyword">return</span> <span class="number">-1</span>; <span class="comment">//a小</span></span><br><span class="line">    <span class="keyword">else</span>{</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=a.len<span class="number">-1</span>;i--){</span><br><span class="line">            <span class="keyword">if</span>(a.d[i]&gt;b.d[i]) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(a.d[i]&lt;b.d[i]) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        }<span class="keyword">return</span> <span class="number">0</span>; <span class="comment">//相等</span></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="高精度四则运算"><a class="markdownIt-Anchor" href="#高精度四则运算"></a> 高精度四则运算</h3>
+<ul>
+<li>存在负号另外处理</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">bign <span class="title">add</span><span class="params">(bign a,bign b)</span></span>{  <span class="comment">//两正数相加</span></span><br><span class="line">    bign c;</span><br><span class="line">    <span class="keyword">int</span> carry=<span class="number">0</span>; <span class="comment">//进位</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.len||i&lt;b.len;i++){</span><br><span class="line">        <span class="keyword">int</span> temp =a.d[i]+a.d[i]+carry;</span><br><span class="line">        c.d[c.len++]=temp%<span class="number">10</span>;  <span class="comment">//注意这里是c.len</span></span><br><span class="line">        carry=temp/<span class="number">10</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(carry!=<span class="number">0</span>){</span><br><span class="line">        c.d[c.len++]=carry;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">bign <span class="title">sub</span><span class="params">(bign a,bign b)</span></span>{  <span class="comment">//大数减小数，否则交换</span></span><br><span class="line">    bign c;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.len||i&lt;b.len;i++){</span><br><span class="line">        <span class="keyword">if</span>(a.d[i]&lt;b.d[i]){</span><br><span class="line">            a.d[i+<span class="number">1</span>]--;</span><br><span class="line">            a.d[i]+=<span class="number">10</span>;</span><br><span class="line">        }c.d[c.len++]=a.d[i]-b.d[i];</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">while</span>(c.d[c.len<span class="number">-1</span>]==<span class="number">0</span>&amp;&amp;c.len!=<span class="number">1</span>){</span><br><span class="line">        c.len--;<span class="comment">//保证结果至少有一位数</span></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">bign <span class="title">multi</span><span class="params">(bign a,<span class="keyword">int</span> b)</span></span>{ <span class="comment">//高精度乘低精度</span></span><br><span class="line">    bign c;</span><br><span class="line">    <span class="keyword">int</span> carry;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len.a;i++){</span><br><span class="line">        <span class="keyword">int</span> temp=a.d[i]*b+carry;</span><br><span class="line">        c.d[c.len++]= temp%<span class="number">10</span>;</span><br><span class="line">        carry=temp/<span class="number">10</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">while</span>(carry!=<span class="number">0</span>){</span><br><span class="line">        c.d[c.len++]=carry%<span class="number">10</span>;</span><br><span class="line">        carry/=<span class="number">10</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">bign <span class="title">devide</span><span class="params">(bign a,<span class="keyword">int</span> b,<span class="keyword">int</span>&amp; r)</span></span>{ <span class="comment">//使r值可以传出，初值为0</span></span><br><span class="line">    bign c;</span><br><span class="line">    c.len=a.len;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=a.len<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--){</span><br><span class="line">        r=r*<span class="number">10</span>+a.d[i];</span><br><span class="line">        c.d[i]=r/b;</span><br><span class="line">        r=r%b;</span><br><span class="line">    }<span class="keyword">while</span>(c.d[c.len]==<span class="number">0</span>&amp;&amp;c.len!=<span class="number">1</span>){</span><br><span class="line">        c.len--;</span><br><span class="line">    }<span class="keyword">return</span> c;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="拓展欧几里得算法"><a class="markdownIt-Anchor" href="#拓展欧几里得算法"></a> 拓展欧几里得算法</h2>
+<ul>
+<li>👇都是整数解</li>
+<li>求解 ax+by=gcd(a,b)</li>
+<li>求解ax+by=c，c是gcd的倍数才有解</li>
+<li>同余式ax≡c(mod m)的求解</li>
+<li>逆元的求解</li>
+<li>计算(b/a)%m</li>
+</ul>
+<p>唔，这个看书吧</p>
+<p>迷迷糊糊</p>
+<h2 id="组合数"><a class="markdownIt-Anchor" href="#组合数"></a> 组合数</h2>
+<ul>
+<li>n的阶乘的质因子p的个数</li>
+<li>组合数的计算</li>
+</ul>
+<p>好麻烦啊，，看书吧，后面跳过了几种方法，没看完。逐渐失去兴趣</p>
+<p><strong>over</strong></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新：<time datetime="2020-02-15T03:26:22.442Z" itemprop="dateUpdated">2020-02-15 11:26:22</time>
+</span>
+
+
+        
+        原文链接：<a href="" target="_blank" rel="external">http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/</a>
+        
+    </div>
+    <footer>
+        <div onclick="location.href='http://Pluto-wei.github.io'">
+            <img src="../../../../img/jqr.jpg" alt="Pluto-wei">
+            <a>Pluto-wei</a>
+        </div>
+    </footer>
+</blockquote>
+
+        
+    <div class="page-reward">
+        <nav class="myreward">
+            <a id="rewardBtn" href="javascript:;" target="_blank" rel="noopener"><span>打&nbsp;赏</span><span>装成好像很多人打赏的样子</span></a>
+        </nav>
+    </div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/&title=《数学入门》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/&title=《数学入门》 — Pluto-wei&source=唔，这里是算法笔记第五章-数学问题💓
+大概是两天半吧，内容挺少的。后面还划水了一部分😜
+至此入门的三章算是看完咯！" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《数学入门》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/&via=http://Pluto-wei.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" target="_blank" rel="noopener" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="../../13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：写个博客纪念一下">下一篇：写个博客纪念一下</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+    
+
+    
+
+    
+
+
+</article>
+
+</div>
+
+        <footer class="footer">
+    <div class="footer-content">
+        <span class="power">
+            <i class="icon icon-lg icon-copyright"></i>
+            2019
+            <i class="icon icon-lg icon-heart"></i>
+            <a href="http://Pluto-wei.github.io">Pluto-wei.com</a>
+            <br/>
+            Power by
+            <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>&nbsp;·&nbsp;
+            Theme
+            <a class="tomotoeslink" href="https://github.com/tomotoes/hexo-theme-tomotoes/" target="_blank" rel="external nofollow">tomotoes</a>
+        </span>
+
+        <br/>
+
+        <span id="RunTime" style="color:#a7a7a2;"></span>
+        <br/>
+
+        <span>
+            
+	<i class="icon icon-lg icon-user">
+<span id="busuanzi_container_site_uv" style='display:none'>
+       访问用户：<span id="busuanzi_value_site_uv"></span>
+    </span>人</i>
+    ·
+    <i class="icon icon-lg icon-eye">
+    <span id="busuanzi_container_site_pv" style='display:none'>
+      访问次数：<span id="busuanzi_value_site_pv"></span>
+    </span>次
+    </i>
+
+
+        </span>
+        <br/>
+
+        <span class="license"><a  target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">博客内容遵循 知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+    </div>
+</footer>
+
+    </main>
+    
+        
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        <span>感谢您的鼓励支持！</span>
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" data-img="../../../../img/%E6%9D%B0%E5%B0%BC%E9%BE%9F2.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="../../../../img/wechat.jpg" data-alipay="../../../../img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechatPay">&nbsp;&nbsp;微信&nbsp;&nbsp;</span>
+                <span class="reward-toggle-item alipayPay">支付宝</span>
+            </div>
+        </label>
+        
+        <i class="icon icon-caret-up"></i>
+    </div>
+</div>
+
+
+    
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" target="_blank" rel="noopener" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/&title=《数学入门》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/&title=《数学入门》 — Pluto-wei&source=唔，这里是算法笔记第五章-数学问题💓
+大概是两天半吧，内容挺少的。后面还划水了一部分😜
+至此入门的三章算是看完咯！" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《数学入门》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/&via=http://Pluto-wei.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p class="wechatshare">扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3awW7CMBAEUP7/p1upVyjM7MZtDi+nKiXgZySvmfXjEV9fP9fznef77X+fX/n+/uPEhYeHhzcaevKRyTskk5Igf3t9PmY8PDy807z3xSChzqbpw+B+mb5kzHh4eHh34LVL8+yd91OMh4eHdx/eiYAjnyA8PDy8u/HyaDWJevNtd142jmcteHh4eDGvbYDd4e+D/T08PDy8xaZ2E8te2x6bjRYPDw/vBC/fLrftqLzplR9EaJtheHh4eOd4eQSQf1gbZ7wvHrMvAA8PD+8Eb1YMZkepksh1Vk4+bKbx8PDwLuXljyVhQRvC7ttaxWYaDw8P7yLerN3eHn5qN+uz2PfFHTw8PLwDvE0jKlma84bW7DzA8HcDHh4e3oI3C2FnYeus3bUqFXh4eHiHeXkU2w4rCYU3RxOK7BkPDw9vzdssxPvINd9StwUMDw8P73957dDbgjEb4qZc4eHh4W14s4NN+eLeRgwXH8nCw8PDO8zLm/15SNEOd99aw8PDwzvNmy3xCSZZvvPjCLNYBA8PD+8EbxM0tAWgnbh2M/3iDh4eHt4xXt5tnw1utsTPni2yEDw8PLwRb/VYXCrykKJtvA2/Qzw8PLxLeZuAYNb4z1tiybS+GAMeHh7en/DaRXzWoHr/bHukoOjy4eHh4a15m2Aib2htjg600fBjVq/w8PDwYt5sIZ7hZ8e82k38i7qHh4eHd4B3VSjQ3s+LQX7h4eHhneN9lVeyHLfHsFpwMWV4eHh4B3izSpKHDjkyzxDahhweHh7eCd5sgW6PBcyOJrSFAQ8PD+8veZtikG+yZyVh1cDDw8PDuwEvKQnJ0Dctt6I5h4eHh/evvLYNNmt6tRHGh2nFw8PDO8ZLBrFZoJNDVPlE1Ak0Hh4e3qW8TQMs+e2/aX3lzbYLvmE8PDy8z7xv1jLFOsTQh1EAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <!-- waves按钮特效 -->
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<!-- 主题配置脚本 -->
+<script>
+var BLOG = { ROOT: '/blog/', SHARE: true, REWARD: true };
+</script>
+
+<!-- jquery -->
+<script src="../../../../js/jquery.min.js?v=3.0"></script>
+
+<!-- 搜索 -->
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item waves-block waves-effect" onclick="location.href='{path}'">
+    <div class="title ellipsis" title="{title}">{title}</div>
+</li>
+</template>
+
+
+<!-- main博客脚本 -->
+<script src="../../../../js/main.min.js?v=3.0" ></script>
+
+<!-- 动画&配置 -->
+<script src="../../../../js/script.min.js?v=3.0" ></script>
+
+<!-- 脚本管理 -->
+<script>
+
+if(window.innerWidth > 800){
+	/* 3D标题 */
+	$(".content-header").on("mousemove", threedee);
+
+	/* 底部追随鼠标 */
+	$(".footer").hover(2);
+
+	/* gotop键的涟漪 */
+	$("#gotop").hover(1);
+
+	/* 赞赏的粒子雨 */
+	$("#reward").hover(3);
+
+	/* 微信公众号的底部渲染 */
+	$("#wechat").hover(4);
+
+    /* 标题跳动 */
+    $(".archivestitle").bumpyText();
+
+	/* 图片点击放大 */
+	const postimg = jQuery(".post-content img:not(.github-emoji)");
+	postimg.on("click",function(){
+
+		mask.classList.add("in");
+		main.classList.add("Mask");
+		menu.classList.add("Mask");
+		var myimg = this.cloneNode(true);
+		myimg.classList.add("imgShow");
+
+		setTimeout(function(){
+			jQuery(myimg).animate({
+				opacity:"1"
+			},1000);
+		},0);
+
+		document.body.appendChild(myimg);
+
+		myimg.onclick=function(){
+			document.body.removeChild(myimg);
+			mask.classList.remove("in");
+			main.classList.remove("Mask");
+			menu.classList.remove("Mask");
+		};
+
+	});
+
+}
+
+/* 名字跳动 */
+$("#name").bumpyText();
+
+
+/* 网站运行时间 */
+setInterval(function () {
+	setTime("2020/01/30");
+}, 1000);
+
+/* 文章块的淡出 */
+postshow();
+
+/* 座右铭 */
+
+   getHitokoto();
+
+
+
+/* 粘贴提示 */
+G($(".post-content"), location.href, "Pluto-wei");
+
+
+/* 控制台 */
+if (window.console && window.console.log) {
+	setTimeout(function () {
+		console.log("\n %c 一个坏掉的番茄 %c  © Simon Ma  http://tomotoes.com \n\n", "color:#FFFFFB;background:#1abc9c;padding:5px 0;border-radius:.5rem 0 0 .5rem;", "color:#FFFFFB;background:#080808;padding:5px 0;border-radius:0 .5rem .5rem 0;");
+	}, 0);
+}
+
+</script>
+
+
+
+
+<!-- 公式渲染 -->
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+<!-- 不蒜子 -->
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+</body>
+</html>
