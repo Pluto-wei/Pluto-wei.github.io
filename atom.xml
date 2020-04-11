@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://pluto-wei.github.io/"/>
-  <updated>2020-03-07T12:32:37.745Z</updated>
+  <updated>2020-04-11T15:47:56.182Z</updated>
   <id>http://pluto-wei.github.io/</id>
   
   <author>
@@ -17,22 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Qaq</title>
+    <link href="http://pluto-wei.github.io/2020/04/11/qaq/"/>
+    <id>http://pluto-wei.github.io/2020/04/11/qaq/</id>
+    <published>2020-04-11T15:24:55.000Z</published>
+    <updated>2020-04-11T15:47:56.182Z</updated>
+    
+    <content type="html"><![CDATA[<p>哎呀，都有1个多月没更新了，过的也太快（shui）了</p><p>今天的我👇</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://upload-images.jianshu.io/upload_images/20644861-04c39b2c08cf582a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" title="">                </div>                <div class="image-caption"></div>            </figure> <a id="more"></a><p>太符合了</p><p>一杯茶一包烟一道oj题做一天💔</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://upload-images.jianshu.io/upload_images/20644861-e4308b4a75b6b3bb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><p>云返校（想看甜甜的爱情）：</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://upload-images.jianshu.io/upload_images/20644861-477dcf396959511f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><p></p><hr><p>最近真的太水了doge</p><p>离开学还得一个月吧，要好好学习了呜呜呜</p><p>上个月有几个算法发在csdn了，有时间搬运一下，顺便再整一下博客</p><p>（还想一天学一个算法的，想peach，，）</p><p>先这样吧。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;哎呀，都有1个多月没更新了，过的也太快（shui）了&lt;/p&gt;
+&lt;p&gt;今天的我👇&lt;/p&gt;
+&lt;figure class=&quot;image-bubble&quot;&gt;
+                &lt;div class=&quot;img-lightbox&quot;&gt;
+                    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+                    &lt;img src=&quot;https://upload-images.jianshu.io/upload_images/20644861-04c39b2c08cf582a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot; title=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;image-caption&quot;&gt;&lt;/div&gt;
+            &lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="心情qaq" scheme="http://Pluto-wei.github.io/categories/%E5%BF%83%E6%83%85qaq/"/>
+    
+    
+      <category term="碎碎念" scheme="http://Pluto-wei.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自闭日常</title>
     <link href="http://pluto-wei.github.io/2020/03/07/%E8%87%AA%E9%97%AD%E6%97%A5%E5%B8%B8/"/>
     <id>http://pluto-wei.github.io/2020/03/07/%E8%87%AA%E9%97%AD%E6%97%A5%E5%B8%B8/</id>
     <published>2020-03-07T07:16:40.000Z</published>
-    <updated>2020-03-07T12:32:37.745Z</updated>
+    <updated>2020-04-11T15:31:23.242Z</updated>
     
-    <content type="html"><![CDATA[<p>又是自闭的一天</p><p>git add之后忘记git commit直接push了，也不知道用了什么操作，本地代码就不见了，git log呀啥的都没显示，在网上一通乱找啥都没找到，好像也有这样的说恢复不了了。</p><p>vscode上面好像有local history，但是装了之后才开始记录，之前的还是没有了，于是就再写了一遍。。。哭了</p><p>然后，几个小时。。。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git stash;</span><br><span class="line">git stash pop;</span><br></pre></td></tr></tbody></table></figure><p>怎么就出来了？？~！！！</p><p>白给orz</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p>又是自闭的一天</p><a id="more"></a><p>git add之后忘记git commit直接push了，也不知道用了什么操作，本地代码就不见了，git log呀啥的都没显示，在网上一通乱找啥都没找到，好像也有这样的说恢复不了了。</p><p>vscode上面好像有local history，但是装了之后才开始记录，之前的还是没有了，于是就再写了一遍。。。哭了</p><p>然后，几个小时。。。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git stash;</span><br><span class="line">git stash pop;</span><br></pre></td></tr></tbody></table></figure><p>怎么就出来了？？~！！！</p><p>白给orz</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;又是自闭的一天&lt;/p&gt;
-&lt;p&gt;git add之后忘记git commit直接push了，也不知道用了什么操作，本地代码就不见了，git log呀啥的都没显示，在网上一通乱找啥都没找到，好像也有这样的说恢复不了了。&lt;/p&gt;
-&lt;p&gt;vscode上面好像有local histor
-      
+      &lt;p&gt;又是自闭的一天&lt;/p&gt;
     
     </summary>
     
