@@ -6,7 +6,7 @@
     
     
     
-    <title>写个博客纪念一下 | Pluto-wei | Hello,nice to meet you!</title>
+    <title>关于全排序的一些理解 | Pluto-wei | Hello,nice to meet you!</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#EE82EE">
@@ -39,16 +39,19 @@
 
 
     
-    <meta name="description" content="应该昨天就发的！ 因为就是在昨天，我的博客终于有了标签和分类，算是有了完整的界面。终于没有那么多地方点开都是404了！！ 但是还是好丑嗷~~ https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;e17711e44e00 https:&#x2F;&#x2F;blog.csdn.net&#x2F;KnownAll&#x2F;article&#x2F;details&#x2F;81360235 https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;c311d312">
+    <meta name="description" content="这个递归真的想了好久 就是觉得别扭，想bb几句🤐">
 <meta name="keywords" content="碎碎念">
 <meta property="og:type" content="article">
-<meta property="og:title" content="写个博客纪念一下">
-<meta property="og:url" content="http:&#x2F;&#x2F;pluto-wei.github.io&#x2F;2020&#x2F;02&#x2F;13&#x2F;%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B&#x2F;index.html">
+<meta property="og:title" content="关于全排序的一些理解">
+<meta property="og:url" content="http:&#x2F;&#x2F;pluto-wei.github.io&#x2F;2020&#x2F;02&#x2F;09&#x2F;AllSorts&#x2F;index.html">
 <meta property="og:site_name" content="Pluto-wei">
-<meta property="og:description" content="应该昨天就发的！ 因为就是在昨天，我的博客终于有了标签和分类，算是有了完整的界面。终于没有那么多地方点开都是404了！！ 但是还是好丑嗷~~ https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;e17711e44e00 https:&#x2F;&#x2F;blog.csdn.net&#x2F;KnownAll&#x2F;article&#x2F;details&#x2F;81360235 https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;c311d312">
+<meta property="og:description" content="这个递归真的想了好久 就是觉得别扭，想bb几句🤐">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-28T16:19:45.554Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;20644861-98104d5e39d449c2.gif?imageMogr2&#x2F;auto-orient&#x2F;strip">
+<meta property="og:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;20644861-c18c9fe808091d6c.gif?imageMogr2&#x2F;auto-orient&#x2F;strip">
+<meta property="og:updated_time" content="2020-02-12T05:43:56.989Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;20644861-98104d5e39d449c2.gif?imageMogr2&#x2F;auto-orient&#x2F;strip">
     
         <link rel="alternate" type="application/atom+xml" title="Pluto-wei" href="../../../../atom.xml">
     
@@ -150,7 +153,7 @@
         <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">写个博客纪念一下</div>
+        <div class="flex-col header-title ellipsis">关于全排序的一些理解</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -187,20 +190,27 @@
 
 <div class="container body-wrap">
     
-<article id="post-写个博客纪念一下"
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#来理解一下全排序递归"><span class="post-toc-number">1.</span> <span class="post-toc-text"> 来理解一下全排序(递归)</span></a></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-AllSorts"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">写个博客纪念一下</h1>
+        <h1 class="post-card-title">关于全排序的一些理解</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2020-02-13 19:03:17" datetime="2020-02-13T11:03:17.000Z"  itemprop="datePublished">2020-02-13</time>
+            <time class="post-time" title="2020-02-09 22:29:04" datetime="2020-02-09T14:29:04.000Z"  itemprop="datePublished">2020-02-09</time>
 
             <br id="mybreak"/>
             
 	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="../../../../categories/%E5%BF%83%E6%83%85qaq/">心情qaq</a></li></ul>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="../../../../categories/%E7%9E%8E%E6%83%B3/">瞎想</a></li></ul>
 
 
             <i>·</i>
@@ -213,16 +223,60 @@
         </div>
         <div class="post-count-custom">
             <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
+            阅读本文可能花费您&nbsp;<span class="post-count">2</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>应该昨天就发的！</p>
-<p>因为就是在昨天，我的博客终于有了标签和分类，算是有了完整的界面。终于没有那么多地方点开都是404了！！</p>
-<p>但是还是好丑嗷~~</p>
-<p><a href="https://www.jianshu.com/p/e17711e44e00" target="_blank" rel="noopener">https://www.jianshu.com/p/e17711e44e00</a><br>
-<a href="https://blog.csdn.net/KnownAll/article/details/81360235" target="_blank" rel="noopener">https://blog.csdn.net/KnownAll/article/details/81360235</a></p>
-<p><a href="https://www.jianshu.com/p/c311d31265e0" target="_blank" rel="noopener">https://www.jianshu.com/p/c311d31265e0</a></p>
-<script>
+            <p>这个递归真的想了好久<br>
+就是觉得别扭，想bb几句🤐</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://upload-images.jianshu.io/upload_images/20644861-98104d5e39d449c2.gif?imageMogr2/auto-orient/strip" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<a id="more"></a>
+<h1 id="来理解一下全排序递归"><a class="markdownIt-Anchor" href="#来理解一下全排序递归"></a> 来理解一下全排序(递归)</h1>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//输出1~n的全排列</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn =<span class="number">11</span>;</span><br><span class="line"><span class="keyword">int</span> n,P[maxn],hashTable[maxn]={<span class="literal">false</span>};</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">generateP</span><span class="params">(<span class="keyword">int</span> index)</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(index == n+<span class="number">1</span>){ <span class="comment">//递归边界</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++){</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d"</span>,P[i]);</span><br><span class="line">        }<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=n;x++){</span><br><span class="line">        <span class="keyword">if</span>(hashTable[x]==<span class="literal">false</span>){</span><br><span class="line">            P[index]=x;</span><br><span class="line">          	hashTable[x]=<span class="literal">true</span>;</span><br><span class="line">            generateP(index+<span class="number">1</span>); <span class="comment">//递归在这里！！！</span></span><br><span class="line">            hashTable[x]=<span class="literal">false</span>;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line">generateP(<span class="number">1</span>);<span class="comment">//从1开始的全排序</span></span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>
+<p>要写从1~3的全排序：</p>
+</li>
+<li>
+<p>一共三位</p>
+<p>第一位从1开始循环，每一轮回就是引用一次剩下2个数的全排列</p>
+</li>
+<li>
+<p>每用一个数，就用hashTable标记该数已经使用，然后开始下一位的全排列，并在排列完并输出以后，恢复这个数没有使用的状态，并且这个数没到最大值的话，这一位上的这个数就要加一了，否则就会退出。（该前面的数恢复了）</p>
+</li>
+<li>
+<p>n个数排完后会执行generateP(n+1)，就会输出这n个数，然后返回继续后面的步骤，继续排列</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>比如generateP(2)，就是从第二位开始的全排列，不会给前面赋值，第一位每个数都会调用一次generateP(2)，当然前面用过的数会不再使用</li>
+<li>直到最后一个数的全排序，就等于剩下的那个数</li>
+</ul>
+<hr>
+<ul>
+<li>但是递归边界又不能写只剩最后一个数，</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n,m,P[<span class="number">100</span>];<span class="comment">//n是总数，m是当前填的数，x是位数</span></span><br><span class="line"><span class="keyword">bool</span> hT[<span class="number">100</span>]={<span class="literal">false</span>};</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">g</span> <span class="params">(<span class="keyword">int</span> x)</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(x==n){  </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++){</span><br><span class="line">            <span class="keyword">if</span>(hT[x]==<span class="literal">false</span>){</span><br><span class="line">                P[x]=i;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++){</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d"</span>,P[i]);</span><br><span class="line">        }<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }<span class="keyword">for</span>(<span class="keyword">int</span> m=<span class="number">1</span>;m&lt;n;m++){</span><br><span class="line">        <span class="keyword">if</span>(hT[m]==<span class="literal">false</span>){</span><br><span class="line">            P[x]=m;</span><br><span class="line">            hT[m]=<span class="literal">true</span>;</span><br><span class="line">            g(x+<span class="number">1</span>);</span><br><span class="line">            hT[m]=<span class="literal">false</span>;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>为什么这样是不行的，因为g(n)运行完后跳到上一位变成false，m+1以后到了n没有循环了</li>
+<li>也就是倒数第二位不会变成最大的数，就以为自己的全排列已经结束了</li>
+<li>也就是最大的数永远不会出现在前面</li>
+<li>所以递归边界不能写n，必须是n+1</li>
+</ul>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span>{</span><br><span class="line">    n=<span class="number">4</span>;</span><br><span class="line">    g(<span class="number">1</span>);</span><br><span class="line">}</span><br><span class="line">输出：</span><br><span class="line"><span class="number">1234</span></span><br><span class="line"><span class="number">1324</span></span><br><span class="line"><span class="number">2134</span></span><br><span class="line"><span class="number">2314</span></span><br><span class="line"><span class="number">3124</span></span><br><span class="line"><span class="number">3214</span></span><br><span class="line">n=<span class="number">3</span> 时输出：</span><br><span class="line"><span class="number">123</span></span><br><span class="line"><span class="number">213</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://upload-images.jianshu.io/upload_images/20644861-c18c9fe808091d6c.gif?imageMogr2/auto-orient/strip" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -247,12 +301,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2020-02-28T16:19:45.554Z" itemprop="dateUpdated">2020-02-29 00:19:45</time>
+    最后更新：<time datetime="2020-02-12T05:43:56.989Z" itemprop="dateUpdated">2020-02-12 13:43:56</time>
 </span>
 
 
         
-        原文链接：<a href="" target="_blank" rel="external">http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/</a>
+        原文链接：<a href="" target="_blank" rel="external">http://pluto-wei.github.io/2020/02/09/AllSorts/</a>
         
     </div>
     <footer>
@@ -284,7 +338,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/&title=《写个博客纪念一下》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/09/AllSorts/&title=《关于全排序的一些理解》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -294,22 +348,27 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/&title=《写个博客纪念一下》 — Pluto-wei&source=你好\(@^0^@)/" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/09/AllSorts/&title=《关于全排序的一些理解》 — Pluto-wei&source=这个递归真的想了好久
+就是觉得别扭，想bb几句🤐
+
+                
+                    
+            ..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/09/AllSorts/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《写个博客纪念一下》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/&via=http://Pluto-wei.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《关于全排序的一些理解》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/09/AllSorts/&via=http://Pluto-wei.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/09/AllSorts/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -332,9 +391,9 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="../../15/%E6%95%B0%E5%AD%A6%E5%85%A5%E9%97%A8/" id="post-prev" class="post-nav-link">
+      <a href="../../12/AlgorithmQuickStart/" id="post-prev" class="post-nav-link">
         <h4 class="title" >
-          上一篇：数学入门
+          上一篇：算法入门！
         </h4>
       </a>
     </div>
@@ -342,8 +401,8 @@
 
   
     <div class="waves-block waves-effect next">
-      <a href="../../12/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%EF%BC%81/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：算法入门！">下一篇：算法入门！</h4>
+      <a href="../../08/SomeQuestion/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：一些做题时遇到的问题">下一篇：一些做题时遇到的问题</h4>
       </a>
     </div>
   
@@ -442,7 +501,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/&title=《写个博客纪念一下》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/02/09/AllSorts/&title=《关于全排序的一些理解》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -452,22 +511,27 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/&title=《写个博客纪念一下》 — Pluto-wei&source=你好\(@^0^@)/" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/02/09/AllSorts/&title=《关于全排序的一些理解》 — Pluto-wei&source=这个递归真的想了好久
+就是觉得别扭，想bb几句🤐
+
+                
+                    
+            ..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/02/09/AllSorts/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《写个博客纪念一下》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/&via=http://Pluto-wei.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《关于全排序的一些理解》 — Pluto-wei&url=http://pluto-wei.github.io/2020/02/09/AllSorts/&via=http://Pluto-wei.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/13/%E5%86%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/02/09/AllSorts/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -478,7 +542,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD60lEQVR42u3cO3LbQBAFQN7/0nSVU5vAezMLSkEjUlHQYrcRDOdTer3i6/33mt35/nB9+u3159fP/XeF1xMXDhw4cOCIF7reXEvwaaM5Vv706ycmZ8SBAwcOHGc5rg+ZL5d8nvDNjtoGXRw4cODA8bMcedI1Sw7zQJscGAcOHDhw/H6ONlXbYO2Lhjhw4MCB42c5Zs2hZIV9UjfrED1eK8WBAwcOHJMMK0rnfv/PD8534MCBAweOUYBsBxSSYYXNMFw+4lCcDgcOHDhwrDmShs0+6ZqlTPlqs5bYx53gwIEDB44FRztwtjleW6Q7VV4c9t9w4MCBA8eCIwlCxaKjkYg8WO65b75x4MCBAweONUfbZGqHD5JtPcFRr4wDBw4cONYcyXIzrNmQQf4a2lQwf7U4cODAgWPDkYe9WWNpU/g7NayQvzYcOHDgwPEdjjwY70PsLNDm99+8Qhw4cODAcZRjkzidKt4VueZocOEmzcOBAwcOHI9xtEMGm8RpPzC3eRk3S+DAgQMHjkkXafgvnvOm0b601wLlO8GBAwcOHN/hONX4yWmSNK8dtpg9CwcOHDhw7Dna4mD7sDZpbIN6MbJwKp3DgQMHDhyjQmG7lVn5Lwnk+W/b6+M6OHDgwIFjxFEPk8XhczYe0RYo93BFLosDBw4cOEZ9/+txhLbt1A6xzQYRZs2nYUaLAwcOHDji5G2ferXFvlkJL287DYcecODAgQPHgmNWXLveYjvW0ILOBuyil4EDBw4cONYcyWHyYYVTIwizY+SFSBw4cODA8RxHm7ZtGlF5Tpm3iJIVipeNAwcOHDgOcbTBLA+ZG9x9yle30HDgwIEDx5qjDWyzhKptOL3ja3aKm09w4MCBA8eaI7l1luzlhbn9PbOkbljRxIEDBw4cozgyw3oiVcv/Ksf6zz04cODAgeMQx76B1A66zULy9Wt7j65XsigOHDhw4Cg5NkdN0rl2ZGGzzgYOBw4cOHDsOdpmT9ua2m+3Hb9oq3w4cODAgeMsR55u5VtJgnSb/uWBuU0Xh8vhwIEDB45LjvwA+ZGuC3/7AYXN9fEpOHDgwIFjzdGmTJvBgvxIbdspCclFCRIHDhw4cCw4Vu3/shHVNquSgD1rht1878CBAwcOHAuONu1JErN9sjcL83tQHDhw4MBxiiMPirN0KxkyyMcX8obWcCADBw4cOHAc4siPmpfqZqMPs8GFtjiIAwcOHDh+A8cmNcoH8k4dflbuxIEDBw4c3+eYdf/zEYcZfVtSvCkO4sCBAweONUcb3vIu1qwd1Zb28jTyZic4cODAgWPNsRloOJv45aE9/4owC9g4cODAgWPE8Qe4ha/yE59UfAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACO0lEQVR42u3aQW7DMAwF0dz/0i7QVYFEynzSaWt6vCqcVNbzgqFIPh74Or6v1f2fnz7feb6/+v7qf0+7ZMiQcVnGsb1WjP0jybb2GL43GTJk3IdBHrMnkUhIXsr+m8v7MmTIkFFK+DiSg2XIkCGDB9wgaQPJ4p/9bsiQIeNSDHKILT6gkWh+5CwuQ4aMCzLSxsBv/v3B/oYMGTIuwjga17m9xc6uZMiQMZtBmpH97daOvjwZlSFDxmxGbZyCj1B0XhxfR4YMGXdj1AphabFs/8S4qCdDhozRjDRp41vvtEL5K14eYmXIkDGIQbbFg2la+ieroYRShgwZN2PwgJiW3si2Tgu4MmTIGMRIH5+GwrT0ljYSZMiQcR8GKdCTsPi5MIrKcDJkyBjKqBW8+sW4eB5kH6BlyJAxmsGLX2kBrj9SRoI7+mWQIUPGaEatSZkeeveJYPBqZMiQMZTBj6O83UiOoP1g/SLDlSFDxmhG/5BZGwXjpDcryJAhYzSjg0nDcTp+wRNHGTJk3JPRH8LoFOx4KwJNfMiQIWMQI61lpQlffyAMnWtlyJAxlMHLW3wK69wBi9N4MmTIuCDjCK+0rE+aBGlD4sX6MmTIGM2oBdza0EantSlDhgwZJMjWBiPScbG0LYEyRxkyZAxi8EIbP8ry1kLtECtDhgwZPODy4Nhpgr7ZswwZMmSEiSNZmbcWWudsGTJkDGJ0GpNknbTcFrc8ZciQMZrRH7YggZKskCamJ8+MyJAh4z8yvgD6RBkGvkGPEQAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
