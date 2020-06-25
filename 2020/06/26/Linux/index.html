@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Linux 常用命令操作 | Pluto-wei | Hello,nice to meet you!</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    
+    <meta name="theme-color" content="#EE82EE">
+    
+    
+    <meta name="keywords" content="Linux">
+    
+    
+
+    
+
+    <!-- Baidu Push -->
+<script>
+	(function(){
+		var bp = document.createElement('script');
+		var curProtocol = window.location.protocol.split(':')[0];
+		if (curProtocol === 'https') {
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		}
+		else {
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		}
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(bp, s);
+	})();
+
+	var _hmt = _hmt || [];
+</script>
+
+
+
+    
+    <meta name="description" content="一点点Linux的命令，待续…">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux 常用命令操作">
+<meta property="og:url" content="http:&#x2F;&#x2F;pluto-wei.github.io&#x2F;2020&#x2F;06&#x2F;26&#x2F;Linux&#x2F;index.html">
+<meta property="og:site_name" content="Pluto-wei">
+<meta property="og:description" content="一点点Linux的命令，待续…">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;s1.ax1x.com&#x2F;2020&#x2F;06&#x2F;25&#x2F;NDuLUs.png">
+<meta property="og:updated_time" content="2020-06-25T16:59:49.802Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;s1.ax1x.com&#x2F;2020&#x2F;06&#x2F;25&#x2F;NDuLUs.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="Pluto-wei" href="../../../../atom.xml">
+    
+    <link rel="shortcut icon" href="../../../../img/jqr.jpg">
+    <link id="style" rel="stylesheet" href="../../../../css/style.css?v=3.0">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+            
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+    <aside id="menu"  class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" >
+      <div class="brand">
+        <a href="../../../../index.html" class="avatar waves-effect waves-circle waves-light">
+          <img src="../../../../img/jqr.jpg" alt="avatar">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname" id="name">Pluto-wei</h5>
+          
+            <div id="yiyanmotto" class="motto">&nbsp;</div>
+          
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+              <li class="waves-block waves-effect">
+                  <a href="../../../../index.html"  >
+                    <i class="icon icon-lg icon-home"></i>
+                    <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="../../../../archives"  >
+                    <i class="icon icon-lg icon-archives"></i>
+                    <span>归 档</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="../../../../categories"  >
+                    <i class="icon icon-lg icon-th-list"></i>
+                    <span>分 类</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="../../../../tags"  >
+                    <i class="icon icon-lg icon-tags"></i>
+                    <span>标 签</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="../../../../links"  >
+                    <i class="icon icon-lg icon-link"></i>
+                    <span>友 链</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="../../../../about"  >
+                    <i class="icon icon-lg icon-smile-o"></i>
+                    <span>关 于</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+      <div class="nav2">
+          
+              <a class="nav2item" data-title="Email" href="../../../../" target="_parent"title="Email" >
+                <i class="icon icon-lg icon-envelope-o envelope-o"></i>
+              </a>
+          
+              <a class="nav2item" data-title="Github" href="https://github.com/Pluto-wei" target="_blank"title="Github" >
+                <i class="icon icon-lg icon-github github"></i>
+              </a>
+          
+              <a class="nav2item" data-title="微博" href="../../../../" target="_blank"title="微博" >
+                <i class="icon icon-lg icon-weibo weibo"></i>
+              </a>
+          
+
+            </div>
+        
+      </ul>
+        
+    </div>
+  </div>
+ 
+</aside>
+
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Linux 常用命令操作</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        <a href="../../atom.xml" target="_blank" class="header-icon waves-effect waves-circle waves-light" id="Rss">
+            <i class="icon icon-lg icon-rss"></i>
+        </a>
+    </div>
+</header>
+<header class="content-header post-header">
+    
+    
+    <div class="container fade-scale">
+        <div id="myheader">
+            <h1 class="title">
+                
+            </h1>
+            <h5 class="subtitle">
+                
+                
+            </h5>
+        </div>
+    </div>
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一、基础知识"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、基础知识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-1-Linux系统的文件结构"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.1 Linux系统的文件结构</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-2-Linux系统命令行的含义"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">1.2 Linux系统命令行的含义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-3-命令的组成"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">1.3 命令的组成</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二、目录操作"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、目录操作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、文件操作"><span class="post-toc-number">3.</span> <span class="post-toc-text">三、文件操作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、权限管理命令"><span class="post-toc-number">4.</span> <span class="post-toc-text">三、权限管理命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四、文件搜索命令"><span class="post-toc-number">5.</span> <span class="post-toc-text">四、文件搜索命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#五、帮助命令"><span class="post-toc-number">6.</span> <span class="post-toc-text">五、帮助命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#六、用户管理命令"><span class="post-toc-number">7.</span> <span class="post-toc-text">六、用户管理命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#七、压缩解压命令"><span class="post-toc-number">8.</span> <span class="post-toc-text">七、压缩解压命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#八、网络命令"><span class="post-toc-number">9.</span> <span class="post-toc-text">八、网络命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#九、关机重启命令"><span class="post-toc-number">10.</span> <span class="post-toc-text">九、关机重启命令</span></a></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-Linux"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Linux 常用命令操作</h1>
+        <div class="post-meta">
+            <i class="icon icon-lg icon-calendar-o"></i>
+            发表于
+            <time class="post-time" title="2020-06-26 00:41:58" datetime="2020-06-25T16:41:58.000Z"  itemprop="datePublished">2020-06-26</time>
+
+            <br id="mybreak"/>
+            
+<script>
+	mybreak.style="display:none";
+</script>
+
+
+            <i>·</i>
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>次浏览
+</span>
+
+
+        </div>
+        <div class="post-count-custom">
+            <i class="icon icon-lg icon-comment-o"></i>
+            阅读本文可能花费您&nbsp;<span class="post-count">7</span>&nbsp;分钟
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>一点点Linux的命令，待续…</p>
+<a id="more"></a>
+<p>6.22-6.25</p>
+<p><a href="https://www.bilibili.com/video/BV1mW411i7Qf" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1mW411i7Qf</a></p>
+<h2 id="一、基础知识">一、基础知识</h2>
+<h3 id="1-1-Linux系统的文件结构">1.1 Linux系统的文件结构</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">/bin        二进制文件，系统常规命令</span><br><span class="line">/boot       系统启动分区，系统启动时读取的文件</span><br><span class="line">/dev        设备文件</span><br><span class="line">/etc        大多数配置文件</span><br><span class="line">/home       普通用户的家目录</span><br><span class="line">/lib        32位函数库</span><br><span class="line">/lib64      64位库</span><br><span class="line">/media      手动临时挂载点</span><br><span class="line">/mnt        手动临时挂载点</span><br><span class="line">/opt        第三方软件安装位置</span><br><span class="line">/proc       进程信息及硬件信息</span><br><span class="line">/root       临时设备的默认挂载点</span><br><span class="line">/sbin       系统管理命令</span><br><span class="line">/srv        数据</span><br><span class="line">/var        数据</span><br><span class="line">/sys        内核相关信息</span><br><span class="line">/tmp        临时文件</span><br><span class="line">/usr        用户相关设定</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="1-2-Linux系统命令行的含义">1.2 Linux系统命令行的含义</h3>
+<figure class="highlight clean"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">示例：root@app00:~# </span><br><span class="line">root    <span class="comment">//用户名，root为超级用户</span></span><br><span class="line">@       <span class="comment">//分隔符</span></span><br><span class="line">app00   <span class="comment">//主机名称</span></span><br><span class="line">~       <span class="comment">//当前所在目录，默认用户目录为~，会随着目录切换而变化</span></span><br><span class="line">#       <span class="comment">//表示当前用户是超级用户，普通用户为$</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="1-3-命令的组成">1.3 命令的组成</h3>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">示例：命令 参数名 参数值</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="二、目录操作">二、目录操作</h2>
+<figure class="highlight jboss-cli"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> <span class="string">//change</span> directory 切换目录</span><br><span class="line"><span class="keyword">cd</span> [目录]</span><br><span class="line"></span><br><span class="line">/根目录  .该文件夹  <span class="string">..</span>上一级目录  ~home目录  -上次访问的目录</span><br><span class="line">xx<span class="params">(文件夹名)</span> 本目录下的文件夹</span><br><span class="line"><span class="string">/xxx/xx/x</span> 输入完整的路径，直接切换到目标目录，输入过程中可以使用tab键快速补全<span class="params">(从根目录开始)</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ls</span> <span class="selector-attr">[-aldi]</span> <span class="selector-attr">[文件或目录]</span> <span class="comment">//查看目录</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span>所有文件 <span class="selector-tag">l</span>详细信息显示 <span class="selector-tag">d</span>目录属性 <span class="selector-tag">i</span><span class="selector-pseudo">:id</span></span><br><span class="line"><span class="selector-tag">u</span>所有者 <span class="selector-tag">g</span>所属组 <span class="selector-tag">o</span>其他人</span><br><span class="line"><span class="selector-tag">r</span>读 <span class="selector-tag">w</span>写 <span class="selector-tag">x</span>执行</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight arduino"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> <span class="comment">//make directories 创建新目录</span></span><br><span class="line"><span class="built_in">mkdir</span> -p [目录名] [目录名] <span class="comment">//-p 递归创建（否则只有一层）</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span>  //<span class="built_in">print</span> working directory 查看当前目录</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight maxima"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rmdir</span> //<span class="built_in">remove</span> empty <span class="built_in">directory</span> 删除空目录</span><br><span class="line"><span class="built_in">rmdir</span> [目录名]</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">cp</span>  <span class="comment">//copy 复制文件或目录（目录加-r,可以是非空文件夹）</span></span><br><span class="line"><span class="selector-tag">cp</span> <span class="selector-tag">-r</span> <span class="selector-tag">-p</span> <span class="selector-attr">[源文件或目录]</span> <span class="selector-attr">[目标目录]</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">r</span>复制目录 <span class="selector-tag">p</span>保留文件属性</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight cos"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">mv</span>  <span class="comment">//move 剪切文件、改名（可以是非空文件夹）修改目录</span></span><br><span class="line"><span class="keyword">mv</span> [原文件或目录] [目标目录]</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stata"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">rm</span> <span class="comment">//remove 删除文件（目录-r）</span></span><br><span class="line"><span class="keyword">rm</span> -rf [文件或目录]</span><br><span class="line"></span><br><span class="line">r删除目录 f强制执行</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="三、文件操作">三、文件操作</h2>
+<figure class="highlight irpf90"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">touch</span> //新增文件</span><br><span class="line"><span class="keyword">touch</span> [文件名]</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stata"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cat</span> <span class="comment">//显示文件内容</span></span><br><span class="line"><span class="keyword">cat</span> [文件名]</span><br><span class="line">-<span class="keyword">n</span>标记行号 </span><br><span class="line">tac <span class="comment">//反向列示，不支持-n</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">more</span> <span class="comment">//分页显示文件内容</span></span><br><span class="line"><span class="selector-tag">more</span> <span class="selector-attr">[文件名]</span></span><br><span class="line">(空格)/<span class="selector-tag">f</span>:翻页  (Enter):换行  <span class="selector-tag">q</span>或<span class="selector-tag">Q</span>:退出</span><br><span class="line"><span class="selector-tag">-----------</span> <span class="selector-tag">-------------------------------------------------</span></span><br><span class="line"><span class="selector-tag">less</span> <span class="comment">//分页显示文件内容</span></span><br><span class="line"><span class="selector-tag">less</span> <span class="selector-attr">[文件名]</span></span><br><span class="line">可向上翻页：<span class="selector-tag">page</span> <span class="selector-tag">up</span>,↑</span><br><span class="line">查找 /关键词 <span class="selector-tag">n</span>下一个</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">head</span> <span class="comment">//显示前几行</span></span><br><span class="line"><span class="selector-tag">head</span> <span class="selector-attr">[-n 20]</span> <span class="selector-attr">[文件名]</span> <span class="comment">//指定行数</span></span><br><span class="line"><span class="selector-tag">tail</span> <span class="selector-attr">[-n 20 -f]</span> <span class="selector-attr">[文件名]</span> </span><br><span class="line"><span class="selector-tag">-f</span> 动态显示文件末尾内容</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ln</span>  <span class="comment">//link 生成链接文件</span></span><br><span class="line"><span class="selector-tag">ln</span> <span class="selector-attr">[-s]</span> <span class="selector-attr">[原文件]</span> <span class="selector-attr">[目标文件]</span></span><br><span class="line"><span class="selector-tag">-s</span> 生成软链接，否则生成硬链接</span><br><span class="line"><span class="comment">//软链接类似快捷方式，硬链接类似拷贝cp-p并可同步更新，id相同，不针对目录</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="三、权限管理命令">三、权限管理命令</h2>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">chmod</span> <span class="comment">//change the permissions mode of a file改变文件或目录权限</span></span><br><span class="line"><span class="selector-tag">chmod</span> <span class="selector-attr">[{ugoa}{+-=}{rwx}]</span> <span class="selector-attr">[文件或目录]</span></span><br><span class="line"><span class="selector-tag">chmod</span> <span class="selector-attr">[777]</span> <span class="selector-attr">[文件名或目录]</span></span><br><span class="line"><span class="selector-tag">r-4</span> <span class="selector-tag">w-2</span> <span class="selector-tag">x-1</span></span><br><span class="line"><span class="selector-tag">rwxrw-r--</span> <span class="selector-tag">764</span></span><br><span class="line"><span class="selector-tag">-R</span> 递归修改</span><br><span class="line">只有所有者<span class="selector-tag">u</span>和管理员<span class="selector-tag">root</span>可以更改权限</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">file</span><span class="selector-pseudo">:r</span><span class="selector-pseudo">:cat</span>/<span class="selector-tag">more</span>/<span class="selector-tag">head</span>/<span class="selector-tag">tail</span>/<span class="selector-tag">less</span></span><br><span class="line">	 <span class="selector-tag">w</span><span class="selector-pseudo">:vim</span></span><br><span class="line">	 <span class="selector-tag">x</span><span class="selector-pseudo">:script</span> <span class="selector-tag">command</span></span><br><span class="line"><span class="selector-tag">directory</span><span class="selector-pseudo">:r</span><span class="selector-pseudo">:ls</span></span><br><span class="line">		  <span class="selector-tag">w</span><span class="selector-pseudo">:touch</span>/<span class="selector-tag">mkdir</span>/<span class="selector-tag">rmdir</span>/<span class="selector-tag">rm</span></span><br><span class="line">		  <span class="selector-tag">x</span><span class="selector-pseudo">:cd</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight less"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">chown</span> <span class="comment">//change file ownership 改变文件或目录的所有者</span></span><br><span class="line"><span class="selector-tag">useradd</span> <span class="selector-tag">xx</span></span><br><span class="line"><span class="selector-tag">chown</span> <span class="selector-attr">[用户]</span> <span class="selector-attr">[文件或目录]</span></span><br><span class="line">只有管理员<span class="selector-tag">root</span>可以操作</span><br><span class="line"><span class="selector-tag">chgrp</span> <span class="comment">//change file froup ownership 改变所属组</span></span><br><span class="line"><span class="selector-tag">groupadd</span> <span class="selector-tag">xx</span></span><br><span class="line"><span class="selector-tag">chgrp</span> <span class="selector-attr">[用户组]</span> <span class="selector-attr">[文件或目录]</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight angelscript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">umask [-S] <span class="comment">//显示设置文件的缺省(default)权限</span></span><br><span class="line">mkdir的文件具有 rwxr-xr-x(目录)</span><br><span class="line">touch的文件在mkdir的基础上去掉x rw-r--r--(文件)</span><br><span class="line"></span><br><span class="line">-S以rwx的形式显示新建文件的缺省权限，否则直接显示数字</span><br><span class="line">umask <span class="number">0022</span>  <span class="number">0</span>:特殊权限 <span class="number">022</span>----w--w- 逻辑异或:rwxr-xr-x(目录)</span><br><span class="line"></span><br><span class="line">umask <span class="number">077</span> <span class="comment">//更改权限成 rwx------(目录)</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="四、文件搜索命令">四、文件搜索命令</h2>
+<ul>
+<li>find locate which whereis grep</li>
+</ul>
+<figure class="highlight sqf"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">find</span> <span class="comment">//文件搜索</span></span><br><span class="line"><span class="built_in">find</span> [搜索范围] [匹配条件]</span><br><span class="line"></span><br><span class="line"><span class="built_in">find</span> [目录/] -<span class="built_in">name</span> [文件名]  <span class="comment">//精准搜索</span></span><br><span class="line">-iname 不区分大小写</span><br><span class="line">*内容* <span class="comment">//文件名包含内容，匹配任意字符</span></span><br><span class="line">内容*  <span class="comment">//以内容开头</span></span><br><span class="line">内容???<span class="comment">//内容后有3个字符，?单个字符</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">find</span> / -<span class="built_in">size</span> +<span class="number">204800</span>  <span class="comment">//大于100MB的文件</span></span><br><span class="line">+n大于 -n小于 n等于</span><br><span class="line"><span class="number">1</span>数据块 <span class="number">512</span>字节 <span class="number">0.5</span>k</span><br><span class="line"></span><br><span class="line"><span class="built_in">find</span> /home -user [user]</span><br><span class="line"><span class="built_in">find</span> /home -<span class="built_in">group</span> [grp]</span><br><span class="line"></span><br><span class="line"><span class="built_in">find</span> /home -cmin -<span class="number">5</span></span><br><span class="line">-amin 访问时间 access</span><br><span class="line">-cmin 文件属性 change</span><br><span class="line">-mmin 文案进内容 modify</span><br><span class="line">-<span class="number">5</span> <span class="number">5</span><span class="built_in">min</span>之内</span><br><span class="line">+<span class="number">5</span> 超过<span class="number">5</span>minn</span><br><span class="line"></span><br><span class="line"><span class="built_in">find</span> / -<span class="built_in">type</span> {fdl} <span class="comment">//文件类型 f文件d目录l软链接文件</span></span><br><span class="line"><span class="built_in">find</span> / -inum <span class="number">23333</span> <span class="comment">//i节点 文件名很奇怪的时候“”</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">find</span> / -<span class="built_in">size</span> +<span class="number">163840</span> -a -<span class="built_in">size</span> -<span class="number">204800</span></span><br><span class="line">-a 同时满足<span class="built_in">and</span> </span><br><span class="line">-o 二者之一<span class="built_in">or</span></span><br><span class="line"><span class="built_in">find</span> / -<span class="built_in">name</span> [] -<span class="built_in">exec</span> [操作ls -l] {} \;</span><br><span class="line">-<span class="built_in">exec</span>/-ok 命令 {} \; 对搜素结果执行操作</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight gauss"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">locate</span> <span class="comment">//速度快，在文件资料库中查找文件</span></span><br><span class="line">updatedb <span class="comment">//更新文件资料库(root权限)(对tmp临时文件无效)</span></span><br><span class="line"><span class="keyword">locate</span> -i xx 不区分大小写</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight stata"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">which</span> <span class="comment">//搜素命令所在目录及别名信息</span></span><br><span class="line"><span class="keyword">which</span> [cp/<span class="keyword">ls</span>]</span><br><span class="line">whereis <span class="comment">//搜索命令所在目录以及帮助文档路径</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight gradle"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grep</span> <span class="comment">//文件内容中搜素</span></span><br><span class="line"><span class="keyword">grep</span> -iv [指定字串] [文件]</span><br><span class="line">-i 不区分大小写</span><br><span class="line">-v 排除指定字串</span><br><span class="line"></span><br><span class="line"><span class="keyword">grep</span> -v ^# <span class="regexp">/etc/i</span>nittab <span class="comment">//排除以#开头的行</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="五、帮助命令">五、帮助命令</h2>
+<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">man</span> <span class="string">//manual 获得帮助信息</span></span><br><span class="line"><span class="attr">man</span> <span class="string">[命令或配置文件]</span></span><br><span class="line"><span class="meta">命令</span>: <span class="string">NAME 作用 /选项</span></span><br><span class="line"><span class="meta">配置文件</span>: <span class="string">NAME 存放信息文件格式，直接写文件名，不需要写绝对路径</span></span><br><span class="line"><span class="attr">1</span> <span class="string">命令的帮助 5 配置文件的帮助 (同名的时候)  例:man 5 passwd</span></span><br><span class="line"></span><br><span class="line"><span class="attr">whatis</span> <span class="string">命令 apropos 配置文件(简短介绍信息)</span></span><br><span class="line"><span class="attr">xx</span> <span class="string">--help  选项信息</span></span><br><span class="line"><span class="attr">info</span> <span class="string">与man类似</span></span><br><span class="line"><span class="attr">date</span> <span class="string">查看时间</span></span><br><span class="line"><span class="attr">man</span> <span class="string">date 更改系统时间</span></span><br><span class="line"><span class="attr">help</span> <span class="string">[命令] //获得shell内置命令的帮助信息(找不到路径) 例:help umask</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="六、用户管理命令">六、用户管理命令</h2>
+<figure class="highlight 1c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">useradd 用户名 <span class="comment">//添加新用户</span></span><br><span class="line">passwd 用户名 <span class="comment">//password设置用户密码，root任何人，passwd改自己密码</span></span><br><span class="line">who <span class="comment">//查看登录用户名，登录终端，tty本地终端，pts远程终端，登录时间，IP地址</span></span><br><span class="line">w <span class="comment">//比who还能获得当前系统时间，连续运行时间uptime，几个用户登录，负载均衡指数</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="七、压缩解压命令">七、压缩解压命令</h2>
+<figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">.gz</span></span><br><span class="line"><span class="attr">gzip</span> <span class="string">//压缩文件，不能压缩目录，tar且不保留原文件</span></span><br><span class="line"><span class="attr">gunzip</span> <span class="string">//GNU unzip 解压gz的压缩文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">tar</span> <span class="string">//打包目录。.tar 再gip压缩成 .tar.gz</span></span><br><span class="line"><span class="attr">tar</span> <span class="string">-zcf 压缩后文件名 目录</span></span><br><span class="line"><span class="attr">tar</span> <span class="string">-zxvf 解压 压缩包</span></span><br><span class="line"><span class="meta">c打包</span> <span class="string">v显示详细信息 f指定文件名 z打包同时压缩/解压缩 x解包 </span></span><br><span class="line"></span><br><span class="line"><span class="attr">zip压缩文件或目录</span></span><br><span class="line"><span class="attr">zip</span> <span class="string">-r 压缩后文件名 文件或目录</span></span><br><span class="line"><span class="attr">r压缩目录</span></span><br><span class="line"><span class="attr">unzip</span> <span class="string">解压缩</span></span><br><span class="line"></span><br><span class="line"><span class="attr">bzip2</span> <span class="string">-k 文件// 文件格式 .bz2</span></span><br><span class="line"><span class="attr">k是否保留压缩包</span></span><br><span class="line"><span class="attr">tar</span> <span class="string">-cjf xx.tar.bz2 xx</span></span><br><span class="line"><span class="attr">bunzip2</span> <span class="string">-k 压缩文件</span></span><br><span class="line"><span class="attr">tar</span> <span class="string">-xjf xx.tar.bz2</span></span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://s1.ax1x.com/2020/06/25/NDuLUs.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+</li>
+</ul>
+<h2 id="八、网络命令">八、网络命令</h2>
+<figure class="highlight applescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">write</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="九、关机重启命令">九、关机重启命令</h2>
+<figure class="highlight angelscript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">shutdown [选项-h] [时间<span class="number">20</span>:<span class="number">30</span>/now] </span><br><span class="line">-c 取消前一个关机命令</span><br><span class="line">-h 关机</span><br><span class="line">-r 重启</span><br><span class="line">其他关机命令 halt，poweroff，init <span class="number">0</span></span><br><span class="line">其他重启命令 reboot，init <span class="number">6</span></span><br><span class="line">系统运行级别 init <span class="number">0123456</span> 帮助文档 help inittab</span><br><span class="line">查询当前的运行级别 runlevel</span><br><span class="line">改变运行级别 init n</span><br><span class="line">退出登录命令 logout</span><br></pre></td></tr></tbody></table></figure>
+<p>先切换到超级用户 su root</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新：<time datetime="2020-06-25T16:59:49.802Z" itemprop="dateUpdated">2020-06-26 00:59:49</time>
+</span>
+
+
+        
+        原文链接：<a href="" target="_blank" rel="external">http://pluto-wei.github.io/2020/06/26/Linux/</a>
+        
+    </div>
+    <footer>
+        <div onclick="location.href='http://Pluto-wei.github.io'">
+            <img src="../../../../img/jqr.jpg" alt="Pluto-wei">
+            <a>Pluto-wei</a>
+        </div>
+    </footer>
+</blockquote>
+
+        
+    <div class="page-reward">
+        <nav class="myreward">
+            <a id="rewardBtn" href="javascript:;" target="_blank" rel="noopener"><span>打&nbsp;赏</span><span>装成好像很多人打赏的样子</span></a>
+        </nav>
+    </div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/Linux/" rel="tag">Linux</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/06/26/Linux/&title=《Linux 常用命令操作》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/06/26/Linux/&title=《Linux 常用命令操作》 — Pluto-wei&source=一点点Linux的命令，待续…" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/06/26/Linux/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Linux 常用命令操作》 — Pluto-wei&url=http://pluto-wei.github.io/2020/06/26/Linux/&via=http://Pluto-wei.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/06/26/Linux/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" target="_blank" rel="noopener" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="../../13/huhuhu/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：芜湖">下一篇：芜湖</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+    
+
+    
+
+    
+
+
+</article>
+
+</div>
+
+        <footer class="footer">
+    <div class="footer-content">
+        <span class="power">
+            <i class="icon icon-lg icon-copyright"></i>
+            2019
+            <i class="icon icon-lg icon-heart"></i>
+            <a href="http://Pluto-wei.github.io">Pluto-wei.com</a>
+            <br/>
+            Power by
+            <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>&nbsp;·&nbsp;
+            Theme
+            <a class="tomotoeslink" href="https://github.com/tomotoes/hexo-theme-tomotoes/" target="_blank" rel="external nofollow">tomotoes</a>
+        </span>
+
+        <br/>
+
+        <span id="RunTime" style="color:#a7a7a2;"></span>
+        <br/>
+
+        <span>
+            
+	<i class="icon icon-lg icon-user">
+<span id="busuanzi_container_site_uv" style='display:none'>
+       访问用户：<span id="busuanzi_value_site_uv"></span>
+    </span>人</i>
+    ·
+    <i class="icon icon-lg icon-eye">
+    <span id="busuanzi_container_site_pv" style='display:none'>
+      访问次数：<span id="busuanzi_value_site_pv"></span>
+    </span>次
+    </i>
+
+
+        </span>
+        <br/>
+
+        <span class="license"><a  target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">博客内容遵循 知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+    </div>
+</footer>
+
+    </main>
+    
+        
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        <span>感谢您的鼓励支持！</span>
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" data-img="../../../../img/%E6%9D%B0%E5%B0%BC%E9%BE%9F2.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="../../../../img/wechat.jpg" data-alipay="../../../../img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechatPay">&nbsp;&nbsp;微信&nbsp;&nbsp;</span>
+                <span class="reward-toggle-item alipayPay">支付宝</span>
+            </div>
+        </label>
+        
+        <i class="icon icon-caret-up"></i>
+    </div>
+</div>
+
+
+    
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" target="_blank" rel="noopener" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pluto-wei.github.io/2020/06/26/Linux/&title=《Linux 常用命令操作》 — Pluto-wei&pic=http://Pluto-wei.github.io/img/jqr.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pluto-wei.github.io/2020/06/26/Linux/&title=《Linux 常用命令操作》 — Pluto-wei&source=一点点Linux的命令，待续…" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pluto-wei.github.io/2020/06/26/Linux/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Linux 常用命令操作》 — Pluto-wei&url=http://pluto-wei.github.io/2020/06/26/Linux/&via=http://Pluto-wei.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pluto-wei.github.io/2020/06/26/Linux/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p class="wechatshare">扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIElEQVR42u3aS27DMAwFwNz/0u62QBv1kVRQWB6tgsCJNF4Q4uf1itf1bfWe//nbd9/ku5QXBgbGbRnXcq2Ptd7y3fPrf0t+9cu+GBgYD2Akh8iPm4TU/PWtd8TAwMDIQ+f6f6rXSgwMDIy9jPz6mH+DgYGB0Utiq+EyYf9DLo6BgXFDxuS69unPH+lvYGBg3IpxFdeknVBNdwunwsDAOJqRB7j8ylg9YpSgJiU8DAyMQxm90n8v1OZJb7mpgIGBcTSjV75PwPN/zl80BgbG2YzJBnsHMnrXRwwMjKcxqsX66gUxGa1ojnpgYGA8jNEb/KoW2qrt0kIujoGBcRyjN2wx3z4J9JNgjYGBcR4jH6eoHmL+CkZVQwwMjOMYkyR2HqDzoPx2XwwMjIcxdhXdqoMUSSOzeTPFwMC4OSMPoNUifnLoyee3YRcDA+MgRi9BrRbFegG60BLAwMB4GGOecPYO1BvCwMDAeAIjL2/tKrr1gmzhpWBgYBzKqI5e9VoC1UZpHtwxMDCew9gbEHul/1GKi4GB8RjGZLM8ua02O6MkFgMD41DGVVx5SlkduUh+G91tMTAwjmPka305Wx86b5FumBnBwMA4lDEJsnk7oVfOw8DAwMjHGqrP5GWyXUgMDAyM/EqXtzB7ye0fRTcMDAyMeIPq9bEaZDcEXAwMjBsy8uGG3vjF5AK6ORfHwMC4IaM34lAd2+rBJmwMDIwjGF+tRomHmeLdhgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <!-- waves按钮特效 -->
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<!-- 主题配置脚本 -->
+<script>
+var BLOG = { ROOT: '/blog/', SHARE: true, REWARD: true };
+</script>
+
+<!-- jquery -->
+<script src="../../../../js/jquery.min.js?v=3.0"></script>
+
+<!-- 搜索 -->
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item waves-block waves-effect" onclick="location.href='{path}'">
+    <div class="title ellipsis" title="{title}">{title}</div>
+</li>
+</template>
+
+
+<!-- main博客脚本 -->
+<script src="../../../../js/main.min.js?v=3.0" ></script>
+
+<!-- 动画&配置 -->
+<script src="../../../../js/script.min.js?v=3.0" ></script>
+
+<!-- 脚本管理 -->
+<script>
+
+if(window.innerWidth > 800){
+	/* 3D标题 */
+	$(".content-header").on("mousemove", threedee);
+
+	/* 底部追随鼠标 */
+	$(".footer").hover(2);
+
+	/* gotop键的涟漪 */
+	$("#gotop").hover(1);
+
+	/* 赞赏的粒子雨 */
+	$("#reward").hover(3);
+
+	/* 微信公众号的底部渲染 */
+	$("#wechat").hover(4);
+
+    /* 标题跳动 */
+    $(".archivestitle").bumpyText();
+
+	/* 图片点击放大 */
+	const postimg = jQuery(".post-content img:not(.github-emoji)");
+	postimg.on("click",function(){
+
+		mask.classList.add("in");
+		main.classList.add("Mask");
+		menu.classList.add("Mask");
+		var myimg = this.cloneNode(true);
+		myimg.classList.add("imgShow");
+
+		setTimeout(function(){
+			jQuery(myimg).animate({
+				opacity:"1"
+			},1000);
+		},0);
+
+		document.body.appendChild(myimg);
+
+		myimg.onclick=function(){
+			document.body.removeChild(myimg);
+			mask.classList.remove("in");
+			main.classList.remove("Mask");
+			menu.classList.remove("Mask");
+		};
+
+	});
+
+}
+
+/* 名字跳动 */
+$("#name").bumpyText();
+
+
+/* 网站运行时间 */
+setInterval(function () {
+	setTime("2020/01/30");
+}, 1000);
+
+/* 文章块的淡出 */
+postshow();
+
+/* 座右铭 */
+
+   getHitokoto();
+
+
+
+/* 粘贴提示 */
+G($(".post-content"), location.href, "Pluto-wei");
+
+
+/* 控制台 */
+if (window.console && window.console.log) {
+	setTimeout(function () {
+		console.log("\n %c 一个坏掉的番茄 %c  © Simon Ma  http://tomotoes.com \n\n", "color:#FFFFFB;background:#1abc9c;padding:5px 0;border-radius:.5rem 0 0 .5rem;", "color:#FFFFFB;background:#080808;padding:5px 0;border-radius:0 .5rem .5rem 0;");
+	}, 0);
+}
+
+</script>
+
+
+
+
+<!-- 公式渲染 -->
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+<!-- 不蒜子 -->
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+</body>
+</html>
