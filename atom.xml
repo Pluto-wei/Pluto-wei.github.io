@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://pluto-wei.github.io/"/>
-  <updated>2021-01-15T13:18:35.709Z</updated>
+  <updated>2021-02-27T03:53:48.241Z</updated>
   <id>http://pluto-wei.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>清华Coming！</title>
+    <link href="http://pluto-wei.github.io/2021/02/27/400/"/>
+    <id>http://pluto-wei.github.io/2021/02/27/400/</id>
+    <published>2021-02-27T03:42:16.000Z</published>
+    <updated>2021-02-27T03:53:48.241Z</updated>
+    
+    <content type="html"><![CDATA[<p>哇哈哈哈哈哈哈哈哈哈哈哈哈哈！！</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://s3.ax1x.com/2021/02/27/6S2QUA.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><a id="more"></a><p>太激动了太激动了！！！</p><p>我们家小朋友太厉害了！！！！太棒了！！！！</p><p>我就说可以上400吧哈哈哈哈哈哈哈哈哈哈哈哈哈</p><p>太开心了嘿嘿</p><hr><p>开学啦开学啦！要好好学习了</p><p>荒废了整个寒假orz</p><p>元宵节快乐！and依然没过500的六级！and亏了1400的基金…</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://s3.ax1x.com/2021/02/27/6SRiqg.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><p>六级！我的六级！</p><p>白酒！我的白酒！</p><hr><p>科研赶紧推进吧！球球了</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;哇哈哈哈哈哈哈哈哈哈哈哈哈哈！！&lt;/p&gt;
+&lt;figure class=&quot;image-bubble&quot;&gt;
+                &lt;div class=&quot;img-lightbox&quot;&gt;
+                    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+                    &lt;img src=&quot;https://s3.ax1x.com/2021/02/27/6S2QUA.png&quot; alt=&quot;&quot; title=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;image-caption&quot;&gt;&lt;/div&gt;
+            &lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>大二上终于结束啦！！</title>
@@ -482,30 +508,6 @@
                 &lt;/div&gt;
                 &lt;div class=&quot;image-caption&quot;&gt;&lt;/div&gt;
             &lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="瞎想" scheme="http://Pluto-wei.github.io/categories/%E7%9E%8E%E6%83%B3/"/>
-    
-    
-      <category term="碎碎念" scheme="http://Pluto-wei.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一些做题时遇到的问题</title>
-    <link href="http://pluto-wei.github.io/2020/02/08/SomeQuestion/"/>
-    <id>http://pluto-wei.github.io/2020/02/08/SomeQuestion/</id>
-    <published>2020-02-08T13:00:14.000Z</published>
-    <updated>2020-02-12T05:43:16.459Z</updated>
-    
-    <content type="html"><![CDATA[<p>有些问题发现之后就直接补充到笔记了</p><p>还有一些不直到归到哪里的问题👇</p><a id="more"></a><p>就直接写吧</p><ul><li>结构和函数要事先声明（定义），在使用之前！或者写成 .h，否则报错</li><li>有时候数据只能读取一部分，不能继续读取并且终止了程序，很可能是循环条件写错了。逻辑问题而不是语法问题，debug啊！！</li><li>13位的整数，写long long给我扣了几分，答案是char  id[15]，不是很明白。改的时候别忘了比大小要改成strcmp</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;有些问题发现之后就直接补充到笔记了&lt;/p&gt;
-&lt;p&gt;还有一些不直到归到哪里的问题👇&lt;/p&gt;
     
     </summary>
     
