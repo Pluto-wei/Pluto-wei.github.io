@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://pluto-wei.github.io/"/>
-  <updated>2021-10-02T16:24:01.412Z</updated>
+  <updated>2021-10-02T16:26:10.821Z</updated>
   <id>http://pluto-wei.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://pluto-wei.github.io/2021/10/03/mathth-coding/"/>
     <id>http://pluto-wei.github.io/2021/10/03/mathth-coding/</id>
     <published>2021-10-02T16:15:48.000Z</published>
-    <updated>2021-10-02T16:24:01.412Z</updated>
+    <updated>2021-10-02T16:26:10.821Z</updated>
     
-    <content type="html"><![CDATA[<p>其实已经过去一周啦！</p><p>一直想着要写点什么但一直都还没有写，有一些对未来的想法也有了一些转变，有了更明确或是更坚定的方向</p><p>最近一个月属实有点累，回家睡了个大觉</p><p>现在也有点晚了，就开个头好了</p><a id="more"></a><h2 id="数模"><a class="markdownIt-Anchor" href="#数模"></a> 数模</h2><p>首先讲讲数模比赛，这次三个人的组合从数模4-5月份的校赛，到集训选拔，参加集训，4套真题，到最后数模国赛，选上答辩，再到推上国一。还是挺超过预期的。。。谁想得到一个在全组里最划水的队伍能成为唯一的国一呢 <a href="https://emojikeyboard.org/copy/Thumbs_Up_Emoji_%F0%9F%91%8D?utm_source=extlink" target="_blank" rel="noopener">👍</a><a href="https://emojikeyboard.org/copy/Thumbs_Up_Emoji_%F0%9F%91%8D?utm_source=extlink" target="_blank" rel="noopener">👍</a> 哦不最后结果还没出，队友：别奶</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<p>其实已经过去一周啦！</p><p>一直想着要写点什么但一直都还没有写，有一些对未来的想法也有了一些转变，有了更明确或是更坚定的方向</p><p>最近一个月属实有点累，回家睡了个大觉</p><p>现在也有点晚了，就开个头好了</p><a id="more"></a><h2 id="数模">数模</h2><p>首先讲讲数模比赛，这次三个人的组合从数模4-5月份的校赛，到集训选拔，参加集训，4套真题，到最后数模国赛，选上答辩，再到推上国一。还是挺超过预期的。。。谁想得到一个在全组里最划水的队伍能成为唯一的国一呢 <a href="https://emojikeyboard.org/copy/Thumbs_Up_Emoji_%F0%9F%91%8D?utm_source=extlink" target="_blank" rel="noopener">👍</a><a href="https://emojikeyboard.org/copy/Thumbs_Up_Emoji_%F0%9F%91%8D?utm_source=extlink" target="_blank" rel="noopener">👍</a> 哦不最后结果还没出，队友：别奶</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
