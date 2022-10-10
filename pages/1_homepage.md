@@ -9,7 +9,6 @@ permalink: /homepage/
 
 <style>
 .biblist { }
-
 /* The item */
 .biblist li { }
 
@@ -120,7 +119,7 @@ function toggleBibtex(articleid) {
 
 ---
 
-### Awards
+### Honors and Awards
 
 * Excellent Student Scholarship, 2020 \& 2021
 * National First Prize, China Undergraduate Mathematical Contest in Modeling, 2021
