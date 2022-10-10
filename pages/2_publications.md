@@ -9,12 +9,8 @@ permalink: /publications/
 * content
 {:toc}
 
-
-
-
 <style>
 .biblist { }
-
 /* The item */
 .biblist li { }
 
@@ -48,8 +44,9 @@ function toggleBibtex(articleid) {
   }
 }
 </script>
+# Publications
 
-**Accepted**
+## 2022
 
 * **Yu-wei Zhuo**, Tian-Jing Zhang, Jin-Fan Hu, Hong-Xia Dou, Ting-Zhu Huang and Liang-Jian Deng. "A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention for Hyperspectral Pansharpening." **IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (IEEE JSTARS)**. [[Project Page]](https://github.com/liangjiandeng/Hyper-DSNet) [[DOI]](https://ieeexplore.ieee.org/document/9870551/) [[PDF]](https://pluto-wei.github.io/papers/2022/zhuo-jstars2022.pdf) <a href="javascript:toggleBibtex('zhuo2022jstars')" class="textlink">[BibTeX]</a>
 <div id="bib_zhuo2022jstars" class="BibTeX noshow">
