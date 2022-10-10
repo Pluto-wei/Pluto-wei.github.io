@@ -8,7 +8,7 @@ description: Yu-Wei Zhuo
 #   Google search results) and in your feed.xml site description.
 
 # baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://pluto-wei.github.io/" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username: pluto-wei
 permalink: /:year/:month/:day/:title/
