@@ -5,7 +5,8 @@ comments: true
 permalink: /homepage/
 ---
 
-[TOC]
+* content
+{:toc}
 
 <style>
 .biblist { }
@@ -121,9 +122,9 @@ function toggleBibtex(articleid) {
 
 ### Honors and Awards
 
-* Excellent Student Scholarship, 2020 \& 2021
+* Excellent Student Scholarship of UESTC, 2020 & 2021
 * National First Prize, China Undergraduate Mathematical Contest in Modeling, 2021
-* Meritorious Winner}, Interdisciplinary Contest in Modeling, 2022
+* Meritorious Winner, Interdisciplinary Contest in Modeling, 2022
 * First Prize in Sichuan Province, The 13th Blue Bridge Cup Competition Software Category, 2022
 * National Second Prize, The 13th Blue Bridge Cup Competition Software Category, 2022
 * The Third Prize Scholarship, The 21st Mathematical Contest in Modeling of UESTC, 2021
@@ -141,8 +142,6 @@ function toggleBibtex(articleid) {
 ---
 
 For more information, please refer to <a href="https://pluto-wei.github.io/CV-Yuwei-Zhuo-EN.pdf">my resumé</a>.
-
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=573geowbknl&amp;m=7&amp;c=ffc000&amp;cr1=ffffff&amp;f=arial&amp;l=1&amp;s=170&amp;bv=70" async="async"></script>
 
 
 
