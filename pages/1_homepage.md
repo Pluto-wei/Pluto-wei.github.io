@@ -5,8 +5,7 @@ comments: true
 permalink: /homepage/
 ---
 
-* content
-{:toc}
+[TOC]
 
 <style>
 .biblist { }
@@ -137,11 +136,6 @@ function toggleBibtex(articleid) {
 ### Academic Activities
 
 
-
-
----
-
-For more information, please refer to <a href="https://pluto-wei.github.io/CV-Yuwei-Zhuo-EN.pdf">my resumé</a>.
 
 
 
