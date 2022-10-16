@@ -53,7 +53,7 @@ function toggleBibtex(articleid) {
 
 ### News
 
-* [10/2022] First National Scholarship in Yingcai Honors College.
+* [10/15/2022] National Scholarship in Yingcai Honors College !
 
   
 
