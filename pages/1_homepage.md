@@ -51,7 +51,11 @@ function toggleBibtex(articleid) {
 
 | <br>**Yu-Wei Zhuo（卓雨薇）**is a senior student majoring in Computer Science and Technology in [Yingcai Honors College (英才实验学院)](https://www.yingcai.uestc.edu.cn/), [UESTC (电子科技大学)](https://www.uestc.edu.cn/), supervised by [Prof. Liang-Jian Deng](https://liangjiandeng.github.io/). I' m broadly interested in computer vision and deep learning. My current research focuses on remote sensing pansharpening, image fusion and deep learning. I will pursue my Ph.D. degree in [Department of Electronic Engineering,Tsinghua University（电子工程系）](https://www.ee.tsinghua.edu.cn/), [Tsinghua University (清华大学)](https://www.tsinghua.edu.cn/).<br> <br> **Email：** [yuuweii@yeah.net](mailto:yuuweii@yeah.net) <br> **Follow Me:** [‪Yu-Wei Zhuo‬ - ‪Google Scholar‬](https://scholar.google.com.hk/citations?user=5k7OYLsAAAAJ)&emsp; [Github](https://github.com/Pluto-wei) <br><br>|  ![image](https://Pluto-wei.github.io/images/photo.jpg)|
 
+### News
 
+* [10/2022] First National Scholarship in Yingcai Honors College.
+
+  
 
 ### Publications
 
@@ -66,10 +70,12 @@ function toggleBibtex(articleid) {
   	volume={15},
   	pages={7539--7555},
   	year={2022},
-  	publisher={IEEE}
+  	publisher={IEEE}，
+    DOI={10.1109/JSTARS.2022.3202866}
 }
 </pre>
 </div>
+
 
 
 
@@ -90,6 +96,7 @@ function toggleBibtex(articleid) {
 }
 </pre>
 </div>
+
 
 
 
@@ -122,7 +129,8 @@ function toggleBibtex(articleid) {
 
 ### Honors and Awards
 
-* Excellent Student Scholarship of UESTC, 2020 & 2021
+* National Scholarship, 2022
+* Excellent Student Scholarship of UESTC, 2020 & 2021 & 2022
 * National First Prize, China Undergraduate Mathematical Contest in Modeling, 2021
 * Meritorious Winner, Interdisciplinary Contest in Modeling, 2022
 * First Prize in Sichuan Province, The 13th Blue Bridge Cup Competition Software Category, 2022

@@ -48,7 +48,7 @@ function toggleBibtex(articleid) {
 
 ## 2022
 
-* **Yu-wei Zhuo**, Tian-Jing Zhang, Jin-Fan Hu, Hong-Xia Dou, Ting-Zhu Huang and Liang-Jian Deng. "A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention for Hyperspectral Pansharpening." **IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (IEEE JSTARS)**. [[Project Page]](https://github.com/liangjiandeng/Hyper-DSNet) [[DOI]](https://ieeexplore.ieee.org/document/9870551/) [[PDF]](https://pluto-wei.github.io/papers/2022/zhuo-jstars2022.pdf) <a href="javascript:toggleBibtex('zhuo2022jstars')" class="textlink">[BibTeX]</a>
+* **Yu-Wei Zhuo**, Tian-Jing Zhang, Jin-Fan Hu, Hong-Xia Dou, Ting-Zhu Huang and Liang-Jian Deng. "A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention for Hyperspectral Pansharpening." **IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (IEEE JSTARS)**. [[Project Page]](https://github.com/liangjiandeng/Hyper-DSNet) [[DOI]](https://ieeexplore.ieee.org/document/9870551/) [[PDF]](https://pluto-wei.github.io/papers/2022/zhuo-jstars2022.pdf) <a href="javascript:toggleBibtex('zhuo2022jstars')" class="textlink">[BibTeX]</a>
 <div id="bib_zhuo2022jstars" class="BibTeX noshow">
 <pre>
 @ARTICLE{zhuo2022jstars,
@@ -84,7 +84,7 @@ function toggleBibtex(articleid) {
 
 
 
-* Si-Ran Peng, Liang-Jian Deng, Jin-Fan Hu and **Yu-wei Zhuo**. "Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening." ***International Joint Conferences on Artificial Intelligence (IJCAI-2022)*** [[DOI]](https://www.ijcai.org/proceedings/2022/179) [[PDF]](https://pluto-wei.github.io/papers/2022/peng-ijcai2022.pdf) <a href="javascript:toggleBibtex('pengijcai2022')" class="textlink">[BibTeX]</a> [[Code]](https://github.com/liangjiandeng/ADKNet)
+* Si-Ran Peng, Liang-Jian Deng, Jin-Fan Hu and **Yu-Wei Zhuo**. "Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening." ***International Joint Conferences on Artificial Intelligence (IJCAI-2022)*** [[DOI]](https://www.ijcai.org/proceedings/2022/179) [[PDF]](https://pluto-wei.github.io/papers/2022/peng-ijcai2022.pdf) <a href="javascript:toggleBibtex('pengijcai2022')" class="textlink">[BibTeX]</a> [[Code]](https://github.com/liangjiandeng/ADKNet)
 
 <div id="bib_pengijcai2022" class="BibTeX noshow">
 <pre>
